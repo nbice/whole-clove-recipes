@@ -9,7 +9,8 @@
   "yields": "2 liters",
   "equipment": [
     "glass flip-top bottles",
-    "large stock pot"
+    "large stock pot",
+    "fine mesh strainer"
   ],
   "ingredients": [
     {
@@ -69,7 +70,7 @@
       "ingredients": [2, 3, 4, 5]
     },
     {
-      "step": "Once cooled, strain the liquids through a fine mesh strainer into a large bowl. Use a spoon to push as much liquid out of the solids as possible. Add the lemons juice and ginger bug to the bowl and stir to combine.",
+      "step": "Once cooled, strain the liquids through a fine mesh strainer, you can also use cheesecloth, into a large bowl. Use a spoon to push as much liquid out of the solids as possible. Add the lemons juice and ginger bug to the bowl and stir to combine.",
       "ingredients": [6, 7]
     },
     "Using a funnel, evenly divide the liquid into 2 1 liter flip-top bottles, leaving at least 1\" of head space at the top.",

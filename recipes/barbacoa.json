@@ -14,64 +14,78 @@
     },
     {
       "qty": 1,
-      "item": "sweet onion"
+      "item": "sweet onion",
+      "prep": "diced"
     },
     {
       "qty": 5,
       "unit": " cloves",
-      "item": "garlic"
+      "item": "garlic",
+      "prep": "minced"
     },
     {
       "qty": 2,
-      "item": "chipotle chilis"
+      "item": "guajillo chili peppers",
+      "prep": "dried"
     },
     {
       "qty": 5,
-      "item": "chiles de arbol"
+      "item": "chiles de arbol",
+      "prep": "dried"
     },
     {
+      "item": "salt",
+      "prep": "to taste"
+    },
+    {
+      "item": "msg",
+      "prep": "to taste"
+    },
+    {
+      "qty": 3,
+      "unit": "g",
+      "item": "ground black pepper"
+    },
+    {
+      "qty": 3,
+      "unit": "g",
       "item": "smoked paprika"
+    },
+    {
+      "qty": 3,
+      "unit": "g",
+      "item": "cumin"
+    },
+    {
+      "qty": 3,
+      "unit": "g",
+      "item": "oregano"
+    },
+    {
+      "qty": 3,
+      "unit": "g",
+      "item": "chili powder"
     },
     {
       "qty": 4,
       "unit": "C",
       "item": "beef stock"
-    },
-    {
-      "item": "salt"
-    },
-    {
-      "item": "pepper"
-    },
-    {
-      "item": "cumin"
-    },
-    {
-      "item": "msg"
-    },
-    {
-      "item": "oregano"
-    },
-    {
-      "item": "chili powder"
     }
   ],
   "directions": [
-    "Heat dutch oven over medium-high heat.",
+    "Heat the dutch oven on the stove top over medium-high heat.",
     {
-      "step": "Cut beef into pieces if needed. Salt and sear in hot pan for 2-3 minutes per side until a brown crust forms.",
-      "ingredients": [0, 7]
+      "step": "Cut the beef into pieces that will fit in the bottom of the dutch oven if needed. Salt the beef on all side and sear in the hot pan for 2-3 minutes per side until a brown crust forms.",
+      "ingredients": [0, 5]
     },
     {
-      "step": "Remove beef. Add onions, garlic, peppers, and spices. Cook until fragrant. Add beef stock.",
-      "ingredients": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12]
+      "step": "Remove the beef from the pan. Add onion, garlic, guajillos, chiles de arbol, salt, msg, black pepper, smoked paprika, cumin, oregano, and chili powder. Cook until fragrant then add the beef stock.",
+      "ingredients": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     },
     "Add beef back to the pot. Bring to a boil, then reduce to a simmer.",
-    "Simmer for several hours until beef is very tender and shreds easily."
+    "Simmer for several hours until beef is very tender and shreds easily. Serve on fresh corn tortillas with cilantro and onions."
   ],
   "notes": [
-    "I used 3 lbs of meat and 1.5x everything. Beef stock preferred. Used around 3g of every spice but could use more.",
-    "Can bake in oven at 375°F."
   ],
   "created_at": "2026-04-05"
 }
