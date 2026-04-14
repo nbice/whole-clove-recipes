@@ -1,5 +1,5 @@
 {
-  "title": "Ginger Beer",
+  "title": "ginger beer",
   "description": "lightly carbonated, non-alcoholic, fermented with ginger bug",
   "category": "beverages",
   "tags": "ginger",
@@ -8,8 +8,8 @@
   "inactive_time": "2 - 5 days",
   "yields": "2 liters",
   "equipment": [
-    "Glass flip-top bottles",
-    "Large Stock Pot"
+    "glass flip-top bottles",
+    "large stock pot"
   ],
   "ingredients": [
     {
@@ -31,7 +31,8 @@
     {
       "qty": 5,
       "unit": "g",
-      "item": "black peppercorns"
+      "item": "black peppercorns",
+      "prep": "whole"
     },
     {
       "qty": 1,
@@ -60,7 +61,7 @@
   ],
   "directions": [
     {
-      "step": "Bring water to a boil in a large stock pot set over high heat. Add sugar and reduce to a low boil.",
+      "step": "Bring the water to a boil in a large stock pot and set over high heat. Add the sugar and reduce to a low boil.",
       "ingredients": [0, 1]
     },
     {
@@ -72,7 +73,7 @@
       "ingredients": [6, 7]
     },
     "Using a funnel, evenly divide the liquid into 2 1 liter flip-top bottles, leaving at least 1\" of head space at the top.",
-    "Store at room temperature for a few days until your desired carbonation level is reached (between 2 and 5 days). Burp the bottles once a day being careful not to let them buble up and spill.",
+    "Store at room temperature for a few days until your desired carbonation level is reached (between 2 and 5 days). Burp the bottles once a day being careful not to let them buble up and spill over.",
     "Once the ginger beer is bubbly you can store in the fridge without burping."
   ],
   "notes": [

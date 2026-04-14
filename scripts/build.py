@@ -116,7 +116,7 @@ def render_recipe(r):
     # Equipment
     if r.get("equipment"):
         html += '        <section class="equipment">\n'
-        html += '            <h2>Special Equipment</h2>\n'
+        html += '            <h2>special equipment</h2>\n'
         html += '            <ul>\n'
         for item in r["equipment"]:
             html += f'                <li>{render_links(item)}</li>\n'
@@ -126,7 +126,7 @@ def render_recipe(r):
     # Ingredients
     if r.get("ingredients"):
         html += '        <section class="ingredients">\n'
-        html += '            <h2>Ingredients</h2>\n'
+        html += '            <h2>ingredients</h2>\n'
         has_groups = any(isinstance(g, dict) and "group" in g for g in r["ingredients"])
         if has_groups:
             for group in r["ingredients"]:
@@ -147,7 +147,7 @@ def render_recipe(r):
     if r.get("directions"):
         all_ingredients = r.get("ingredients", [])
         html += '        <section class="instructions">\n'
-        html += '            <h2>Directions</h2>\n'
+        html += '            <h2>directions</h2>\n'
         has_groups = any(isinstance(s, dict) and "group" in s for s in r["directions"])
         if has_groups:
             # Build a lookup from group name to its ingredient items
@@ -173,7 +173,7 @@ def render_recipe(r):
     # Notes
     if r.get("notes"):
         html += '        <section class="notes">\n'
-        html += '            <h2>Notes</h2>\n'
+        html += '            <h2>notes</h2>\n'
         html += '            <ul>\n'
         for note in r["notes"]:
             html += f'            <li>{render_links(note)}</li>\n'
