@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} — the whole clove</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="site-name">the whole clove</a>
+            <div class="nav-links">
+                <div class="search-wrapper">
+                    <input type="search" id="search-input" class="search-input"
+                           placeholder="search recipes..." autocomplete="off"
+                           aria-label="search recipes">
+                    <div id="search-results" class="search-results" role="listbox" aria-label="Search results" hidden></div>
+                </div>
+                <a href="recipes.html">recipes</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{content}}
+    </main>
+
+    <footer>
+
+    </footer>
+    <script>var SEARCH_INDEX={{search_index}};</script>
+    <script src="static/search.js" defer></script>
+</body>
+</html>

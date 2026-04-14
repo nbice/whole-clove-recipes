@@ -1,0 +1,113 @@
+{
+  "title": "pork fried rice",
+  "description": "",
+  "category": "mains",
+  "tags": "pork, rice, asian",
+  "ingredients": [
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "oil",
+      "pre": "for frying"
+    },
+    {
+      "qty": "2",
+      "unit": "C",
+      "item": "cooked rice",
+      "prep": "1 day old is best"
+    },
+    {
+      "qty": 4,
+      "item": "garlic cloves",
+      "prep": "minced"
+    },
+    {
+      "qty": "1/2",
+      "item": "medium onion",
+      "prep": "diced"
+    },
+    {
+      "qty": 10,
+      "unit": "g",
+      "item": "ginger",
+      "prep": "minced"
+    },
+    {
+      "qty": 6,
+      "unit": "g",
+      "item": "crushed red pepper"
+    },
+    {
+      "qty": 3,
+      "item": "eggs",
+      "prep": "scrambled"
+    },
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "frozen peas and carrots"
+    },
+    {
+      "qty": 3,
+      "unit": "T",
+      "item": "soy sauce"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "sesame oil"
+    },
+    {
+      "item": "salt"
+    },
+    {
+      "item": "pepper"
+    },
+    {
+      "item": "msg"
+    },
+    {
+      "qty": 500,
+      "unit": "g",
+      "item": "pork",
+      "prep": "cooked — I recommend [my smoked pork butt](recipes/smoked_pork_butt)"
+    },
+    {
+      "item": "green onion",
+      "prep": "sliced"
+    },
+    {
+      "item": "cilantro"
+    },
+    {
+      "item": "fried chili crisps"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Heat wok over high heat. Add oil and rice, cook for 2 minutes.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "Make a well in the center of the rice. Add onions and salt, cook until translucent. Use more oil as needed. Mix in with rice. Repeat with garlic, ginger, and red pepper. Cooking for a few minutes or until fragrant.",
+      "ingredients": [3, 10, 2, 4, 5]
+    },
+    {
+      "step": "Create another well in the center of the rice and add the scrambled eggs. Cook for 1 minute, stirring, then mix the rice and eggs together.",
+      "ingredients": [6]
+    },
+    {
+      "step": "Add pork, frozen peas and carrots, and msg, pepper, and salt to taste. Cook until the peas and carrots are heated all the way through and soft, 3-5 minutes.",
+      "ingredients": [7, 11, 12, 13]
+    },
+    {
+      "step": "Turn the wok off the heat. Add soy sauce and sesame oil then combine.",
+      "ingredients": [8, 9]
+    },
+    {
+      "step": "Garnish with cilantro, green onion, and fried chili crisps.",
+      "ingredients": [14, 15, 16]
+    }
+  ],
+  "created_at": "2026-04-05"
+}

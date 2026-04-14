@@ -1,0 +1,82 @@
+{
+  "title": "Ginger Beer",
+  "description": "lightly carbonated, non-alcoholic, fermented with ginger bug",
+  "category": "beverages",
+  "tags": "ginger",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "inactive_time": "2 - 5 days",
+  "yields": "2 liters",
+  "equipment": [
+    "Glass flip-top bottles",
+    "Large Stock Pot"
+  ],
+  "ingredients": [
+    {
+      "qty": 2,
+      "unit": "L",
+      "item": "water"
+    },
+    {
+      "qty": 200,
+      "unit": "g",
+      "item": "sugar"
+    },
+    {
+      "qty": 120,
+      "unit": "g",
+      "item": "ginger",
+      "prep": "peeled and finely chopped or grated"
+    },
+    {
+      "qty": 5,
+      "unit": "g",
+      "item": "black peppercorns"
+    },
+    {
+      "qty": 1,
+      "item": "dried cayenne"
+    },
+    {
+      "qty": 1,
+      "unit": "g",
+      "item": "whole cloves"
+    },
+    {
+      "qty": 3,
+      "item": "lemons",
+      "prep": "juiced"
+    },
+    {
+      "qty": 120,
+      "unit": "ml",
+      "item": "ginger bug",
+      "prep": "active"
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [
+    {
+      "step": "Bring water to a boil in a large stock pot set over high heat. Add sugar and reduce to a low boil.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "Once the sugar has dissolved add the ginger, peppercorns, dried cayenne, and whole cloves. Boil for 5 minutes then take off the heat and let cool completely to room temperature.",
+      "ingredients": [2, 3, 4, 5]
+    },
+    {
+      "step": "Once cooled, strain the liquids through a fine mesh strainer into a large bowl. Use a spoon to push as much liquid out of the solids as possible. Add the lemons juice and ginger bug to the bowl and stir to combine.",
+      "ingredients": [6, 7]
+    },
+    "Using a funnel, evenly divide the liquid into 2 1 liter flip-top bottles, leaving at least 1\" of head space at the top.",
+    "Store at room temperature for a few days until your desired carbonation level is reached (between 2 and 5 days). Burp the bottles once a day being careful not to let them buble up and spill.",
+    "Once the ginger beer is bubbly you can store in the fridge without burping."
+  ],
+  "notes": [
+    "If your ginger bug is not active make sure you feed it a few hours before making the ginger beer by mixing 28g of white sugar, 22g of minced ginger (peels are fine), and 60ml of filtered water into your ginger bug until the sugar dissolves. Leave out at room temperature covered loosely."
+  ],
+  "created_at": "2026-03-19"
+}

@@ -1,0 +1,118 @@
+{
+  "title": "venison curry",
+  "description": "",
+  "category": "mains",
+  "tags": "beef, curry, venison, deer, backstrap",
+  "ingredients": [
+    {
+      "qty": 2,
+      "unit": "lbs",
+      "item": "venison",
+      "prep": "cut into 1\" cubes"
+    },
+    {
+      "qty": 10,
+      "unit": "g",
+      "item": "salt"
+    },
+    {
+      "qty": "3 1/2",
+      "unit": "T",
+      "item": "olive oil"
+    },
+    {
+      "qty": 3,
+      "unit": "T",
+      "item": "curry powder"
+    },
+    {
+      "qty": 15,
+      "unit": "g",
+      "item": "ginger",
+      "prep": "chopped"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "red pepper flakes"
+    },
+    {
+      "qty": "1/2",
+      "item": "onion",
+      "prep": "sliced"
+    },
+    {
+      "qty": 5,
+      "unit": "g",
+      "item": "garlic",
+      "prep": "minced"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "chili paste"
+    },
+    {
+      "qty": 2,
+      "item": "cinnamon sticks"
+    },
+    {
+      "qty": 2,
+      "item": "carrots",
+      "prep": "thick sliced"
+    },
+    {
+      "qty": 2,
+      "item": "sweet potatoes",
+      "prep": "small, cubed"
+    },
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "beef stock"
+    },
+    {
+      "qty": 1,
+      "unit": "oz",
+      "item": "tomato sauce"
+    },
+    {
+      "qty": 13,
+      "unit": "oz",
+      "item": "coconut milk"
+    },
+    {
+      "qty": 1,
+      "item": "bell pepper",
+      "prep": "chopped"
+    },
+    {
+      "item": "salt and pepper to taste"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Mix the cubed meat with salt in a bowl and set aside.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "Add oil to a large pot over medium heat. Once hot, add curry powder and mix together with a wooden spoon. Add ginger and red pepper flakes. Cook until fragrant, then add onion. Once onions are slightly translucent, add garlic. Sauté for 30-60 seconds, then add carrots, sweet potatoes, chili paste, and cinnamon sticks. Cook another 5 minutes, stirring occasionally.",
+      "ingredients": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    },
+    {
+      "step": "Add stock, tomato sauce, and coconut milk to the pot.",
+      "ingredients": [12, 13, 14]
+    },
+    "In a separate pan, brown the meat in batches and add to the pot once browned.",
+    "Once all meat is added to the pot, continue to simmer for 30 minutes or until the carrots and potatoes are fork tender.",
+    {
+      "step": "Add bell pepper, cook for an additional 10 minutes.",
+      "ingredients": [15]
+    },
+    "Serve over rice."
+  ],
+  "notes": [
+    "I used venison backstrap but lean beef also works."
+  ],
+  "created_at": "2026-04-05"
+}

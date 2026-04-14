@@ -1,0 +1,92 @@
+{
+  "title": "plokkfiskur",
+  "description": "icelandic fish stew",
+  "category": "mains",
+  "tags": "fish, icelandic, seafood",
+  "equipment": ["smoker"],
+  "ingredients": [
+    {
+      "qty": 1,
+      "unit": "lb",
+      "item": "cod"
+    },
+    {
+      "qty": 1,
+      "unit": "lb",
+      "item": "potatoes"
+    },
+    {
+      "qty": 1,
+      "item": "shallot",
+      "prep": "diced"
+    },
+    {
+      "qty": "4-5",
+      "item": "garlic cloves",
+      "prep": "diced"
+    },
+    {
+      "qty": 3,
+      "unit": "T",
+      "item": "butter"
+    },
+    {
+      "qty": 3,
+      "unit": "T",
+      "item": "flour"
+    },
+    {
+      "qty": 300,
+      "unit": "ml",
+      "item": "milk"
+    },
+    {
+      "item": "salt"
+    },
+    {
+      "item": "zest of 1 lemon"
+    },
+    {
+      "group": "seasonings",
+      "items": [
+        {
+          "item": "italian blend"
+        },
+        {
+          "item": "white pepper"
+        },
+        {
+          "item": "cayenne pepper"
+        }
+      ]
+    }
+  ],
+  "directions": [
+    {
+      "step": "Smoke cod until fully cooked.",
+      "ingredients": [0]
+    },
+    {
+      "step": "Boil potatoes until cooked.",
+      "ingredients": [1]
+    },
+    {
+      "step": "Sauté onion and garlic in butter until soft.",
+      "ingredients": [2, 3, 4]
+    },
+    {
+      "step": "Add seasonings and flour. Cook for 2-3 minutes.",
+      "ingredients": [5, 9]
+    },
+    {
+      "step": "Slowly add milk to get a thick sauce.",
+      "ingredients": [6]
+    },
+    {
+      "step": "Add potatoes, fish, and lemon zest. Mix together, salt to taste.",
+      "ingredients": [7, 8]
+    },
+    "Enjoy."
+  ],
+  "created_at": "2026-04-05"
+}

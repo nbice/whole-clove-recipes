@@ -1,0 +1,104 @@
+{
+  "title": "hot honey chicken breast",
+  "description": "",
+  "category": "mains",
+  "tags": "chicken, spicy, honey",
+  "prep_time": "1 hour",
+  "ingredients": [
+    {
+      "group": "hot honey sauce",
+      "items": [
+        {
+          "item": "salt",
+          "prep": "to taste"
+        },
+        {
+          "qty": 10,
+          "unit": "g",
+          "item": "chili flakes",
+          "prep": "dried"
+        },
+        {
+          "qty": 40,
+          "unit": "g",
+          "item": "honey"
+        },
+        {
+          "qty": 185,
+          "unit": "g",
+          "item": "hot sauce",
+          "prep": "Franks Red Hot works great"
+        },
+        {
+          "item": "oil",
+          "prep": "for frying"
+        }
+      ]
+    },
+    {
+      "group": "chicken",
+      "items": [
+        {
+          "qty": 3,
+          "item": "chicken breasts"
+        },
+        {
+          "qty": 1,
+          "unit": "t",
+          "item": "salt"
+        },
+        {
+          "item": "pepper"
+        },
+        {
+          "qty": 1,
+          "unit": "t",
+          "item": "garlic powder"
+        },
+        {
+          "qty": 1,
+          "unit": "t",
+          "item": "chipotle powder"
+        },
+        {
+          "qty": 3,
+          "unit": "T",
+          "item": "olive oil"
+        },
+        {
+          "item": "hot honey sauce"
+        }
+      ]
+    }
+  ],
+  "directions": [
+    {
+      "group": "hot honey sauce",
+      "directions": [
+        {
+          "step": "Fry dried chili flakes in oil with salt until fragrant. About 1 minute.",
+          "ingredients": [0, 1, 4]
+        },
+        {
+          "step": "Add honey and hot sauce. Cook on low-medium heat for 5 minutes, stirring frequently. Set aside an keep warm until ready to use.",
+          "ingredients": [2, 3]
+        }
+      ]
+    },
+    {
+      "group": "chicken",
+      "directions": [
+        {
+          "step": "Butterfly the chicken breast and if necessary use a mallet to pound the chicken to an even thickness throughout. Season the chicken with salt, pepper, garlic powder, and chipotle powder. Drizzle with olive oil. Set aside for 30 minutes.",
+          "ingredients": [0, 1, 2, 3, 4, 5]
+        },
+        "Place the chicken on a cooling rack over a sheet pan and bake in the oven at 325°F until it reaches an internal temperature of 140°F (25-30 minutes).",
+        {
+          "step": "Remove the chicken from the oven and set the oven to a high broil, moving the oven rack to the highest position. Brush a thick layer of hot honey sauce on the chicken and return to the top rack of the oven to broil for 2-5 minutes, until the sauce starts to burn and bubble. Remove from the oven, flip the chicken and repeat the process 3 more times.",
+          "ingredients": [6]
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-04-05"
+}

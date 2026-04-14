@@ -1,0 +1,217 @@
+{
+  "title": "peppermint mocha cookies",
+  "description": "double chocolate with espresso, peppermint buttercream, and crushed candy canes",
+  "category": "desserts",
+  "tags": "chocolate, cookie, peppermint, buttercream",
+  "prep_time": "45 minutes",
+  "cook_time": "10 minutes",
+  "inactive_time": "2 hours",
+  "total_time": "2 hours 55 minutes",
+  "yields": "12 cookies",
+  "equipment": [
+    "Cookie sheet",
+    "Silicone baking mat",
+    "Stand mixer"
+  ],
+  "ingredients": [
+    {
+      "group": "chocolate chocolate chunk cookies",
+      "items": [
+        {
+          "qty": 150,
+          "unit": "g",
+          "item": "all purpose flour"
+        },
+        {
+          "qty": 2.5,
+          "unit": "g",
+          "item": "baking powder"
+        },
+        {
+          "qty": 2,
+          "unit": "g",
+          "item": "salt"
+        },
+        {
+          "qty": 75,
+          "unit": "g",
+          "item": "white sugar"
+        },
+        {
+          "qty": 75,
+          "unit": "g",
+          "item": "brown sugar"
+        },
+        {
+          "qty": 113,
+          "unit": "g",
+          "item": "unsalted butter"
+        },
+        {
+          "qty": 1,
+          "item": "egg"
+        },
+        {
+          "qty": 1,
+          "unit": "t",
+          "item": "vanilla extract"
+        },
+        {
+          "qty": 4,
+          "unit": "oz",
+          "item": "semi-sweet baking chocolate",
+          "prep": "chopped"
+        },
+        {
+          "qty": 40,
+          "unit": "g",
+          "item": "cocoa powder"
+        },
+        {
+          "qty": 30,
+          "unit": "ml",
+          "item": "espresso"
+        }
+      ]
+    },
+    {
+      "group": "peppermint buttercream",
+      "items": [
+        {
+          "qty": 113,
+          "unit": "g",
+          "item": "unsalted butter",
+          "prep": "room temperature"
+        },
+        {
+          "qty": 125,
+          "unit": "g",
+          "item": "powdered sugar"
+        },
+        {
+          "qty": "3/4",
+          "unit": "t",
+          "item": "vanilla paste"
+        },
+        {
+          "qty": "3/4",
+          "unit": "t",
+          "item": "peppermint extract"
+        }
+      ]
+    },
+    {
+      "group": "chocolate ganache",
+      "items": [
+        {
+          "qty": 35,
+          "unit": "g",
+          "item": "semi-sweet baking chocolate",
+          "prep": "chopped"
+        },
+        {
+          "qty": 35,
+          "unit": "g",
+          "item": "heavy cream"
+        }
+      ]
+    },
+    {
+      "group": "assembly",
+      "items": [
+        {
+          "qty": 12,
+          "item": "chocolate chocolate chunk cookies"
+        },
+        {
+          "qty": 1,
+          "item": "peppermint buttercream"
+        },
+        {
+          "qty": 70,
+          "unit": "g",
+          "item": "chocolate ganache"
+        },
+        {
+          "qty": 1.5,
+          "item": "candy canes",
+          "prep": "crushed"
+        }
+      ]
+    }
+  ],
+  "amount_variations": [
+    "2x",
+    "3x"
+  ],
+  "directions": [
+    {
+      "group": "chocolate chocolate chunk cookies",
+      "directions": [
+        {
+          "step": "Melt butter in a medium sauce pot over med-low heat then mix in cocoa powder and espresso. Remove from heat and allow to cool to room temperature.",
+          "ingredients": [5, 9, 10]
+        },
+        {
+          "step": "Once cooled, cream the butter with the sugars in a stand mixer using the paddle attachment. Start mixing on low speed until the ingredients are incorporated the turn up the speed to med-high for 2 minutes or until the mixture is homogeneous and fluffy. Add the egg and vanilla extract, beat on medium speed for a minute or until fully combined",
+          "ingredients": [3, 4, 6, 7]
+        },
+        {
+          "step": "In a separate bowl whisk together the flour, baking powder, and salt. Slowly add the flour mixture into the stand mixer while mixing on med-low speed. Mix until all just combined and there are no dry spots in the dough. Use a rubber spatula to fold in the chopped chocolate pieces.",
+          "ingredients": [0, 1, 2, 8]
+        },
+        "Roll the dough out into balls ~50g each. Place on a small sheet tray or plate lined with parchment paper and place in the fridge for at least 2 hours.",
+        "Once ready to bake preheat the oven to 425\u00b0F. Line a baking sheet with a silicone baking mat and place 12 balls of cookie dough on the baking mat straight from the fridge in a 3 x 4 grid leaving 2 inches of room between each.",
+        "Bake for 10 minutes. Let cool on the baking sheet for 5 minutes before transferring to a cooling rack to cool completely.",
+        "Start making the buttercream while the cookies are cooling"
+      ]
+    },
+    {
+      "group": "peppermint buttercream",
+      "directions": [
+        {
+          "step": "In the bowl of a stand mixer fitted with the paddle attachment, cream the butter until smooth. Add half of the powdered sugar and mix on low just until combined. Add in other half of the powdered sugar and repeat.",
+          "ingredients": [0, 1]
+        },
+        {
+          "step": "Add vanilla paste and peppermint extract to the bowl. Mix on low until the vanilla and peppermint are incorporated and then turn the speed to high and continue mixing for 2 - 4 minutes or until the buttercream is smooth.",
+          "ingredients": [2, 3]
+        },
+        "Move onto the cookie assembly"
+      ]
+    },
+    {
+      "group": "chocolate ganache",
+      "directions": [
+        {
+          "step": "Place the chopped chocolate in a heat proof bowl. Heat the heavy cream on the stove top or by microwaving in 30 second intervals until the cream is almost at a boil. Por the cream over the chocolate in the heat proof bowl, cover, and let sit for 5 minutes.",
+          "ingredients": [0, 1]
+        },
+        "Whisk the chocolate and cream together until very smooth. Use immediately."
+      ]
+    },
+    {
+      "group": "assembly",
+      "directions": [
+        "Set the cookies on a cooling rack and set over a sheet tray to catch any mess from the ganache.",
+        {
+          "step": "Evenly divide the buttercream among the entire batch of cookies. You can use a piping bag to pipe the buttercream onto each cookie individually or simply use an offset spatula to spread out the buttercream.",
+          "ingredients": [0, 1]
+        },
+        {
+          "step": "Make the ganache now. Once ready pour the ganache over the batch of cookies in a thin stream moving back and fourth and left to right to create several stripes of ganache on each cookie.",
+          "ingredients": [2]
+        },
+        {
+          "step": "Add crushed candy canes on top of the cookies.",
+          "ingredients": [3]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Do not make the chocolate ganache until you are ready to use it. It will set and be too hard to use if you wait too long.",
+    "For extra texture you can add more crushed candy canes to the peppermint buttercream. Simply fold in the crushed candy after finishing the buttercream with the steps listed above."
+  ],
+  "created_at": "2026-03-19"
+}

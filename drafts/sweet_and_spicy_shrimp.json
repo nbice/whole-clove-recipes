@@ -1,0 +1,114 @@
+{
+  "title": "sweet and spicy shrimp",
+  "description": "",
+  "category": "mains",
+  "tags": "shrimp, seafood, spicy",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "inactive_time": "",
+  "total_time": "30 minutes",
+  "yields": "how much does the recipe make",
+  "ingredients": [
+    {
+      "qty": 2,
+      "unit": "lbs",
+      "item": "shrimp",
+      "prep": "peeled and deveined"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "oil",
+      "prep": "for frying"
+    },
+    {
+      "qty": 1,
+      "item": "fresno chili pepper",
+      "prep": "finely diced"
+    },
+    {
+      "qty": 1,
+      "item": "jalape\u00f1o",
+      "prep": "finely diced"
+    },
+    {
+      "qty": 4,
+      "unit": " cloves",
+      "item": "garlic",
+      "prep": "minced"
+    },
+    {
+      "qty": 1,
+      "item": "lime",
+      "prep": "juice of"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "white sugar"
+    },
+    {
+      "qty": "1/2",
+      "unit": "C",
+      "item": "soy sauce"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "chili powder"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "black pepper",
+      "prep": "ground"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "butter"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "sesame oil"
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [
+    {
+      "step": "Heat a large pan over medium heat with the frying oil. Saut\u00e9 the shrimp for about a minute on each side or until lightly browned. Set aside.",
+      "ingredients": [
+        0,
+        1
+      ]
+    },
+    {
+      "step": "In the same pan add the peppers, salt, sugar, garlic, soy sauce, chili powder, black pepper, and butter. Saut\u00e9 for 5 minutes until the garlic and peppers are softened.",
+      "ingredients": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "step": "Add the shrimp back to the pan and cook for another 2 - 3 minutes until the sauce is thickened. Remove from the heat and add in the sesame oil. Stir to combine.",
+      "ingredients": [
+        11
+      ]
+    }
+  ],
+  "notes": [
+    "You can use any type of chili peppers in this recipe. Adjust to your preferred heat level."
+  ],
+  "created_at": "2026-03-19"
+}

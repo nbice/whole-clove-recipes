@@ -1,0 +1,62 @@
+{
+  "title": "cilantro lime sauce",
+  "description": "a roasted green sauce",
+  "category": "sauces",
+  "tags": "sauce, cilantro, lime, spicy",
+  "ingredients": [
+    {
+      "qty": 6,
+      "item": "jalapeños",
+      "prep": "whole"
+    },
+    {
+      "qty": "1/2",
+      "item": "onion"
+    },
+    {
+      "qty": 4,
+      "item": "garlic cloves"
+    },
+    {
+      "qty": "2 1/2",
+      "item": "limes",
+      "prep": "juice of"
+    },
+    {
+      "qty": 1,
+      "item": "bunch cilantro"
+    },
+    {
+      "qty": 60,
+      "unit": "ml",
+      "item": "olive oil"
+    },
+    {
+      "qty": 2,
+      "unit": "g",
+      "item": "salt"
+    },
+    {
+      "item": "pepper",
+      "prep": "to taste"
+    },
+    {
+      "qty": "pinch of",
+      "item": "xanthan gum",
+      "prep": "optional, for thickening"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Roast the jalapeños under the broiler in your oven, flipping every 2 minutes. Once slightly charred remove from the oven and finish with a blowtorch, completely charring the skin. If you don't have a blow torch you can continue to use the broiler.",
+      "ingredients": [0]
+    },
+    "Set peppers in a metal bowl, cover with plastic wrap, and let sit for 5 minutes.",
+    "Use a wet paper towel to remove the charred skin from the peppers. Use a knife to cut off the stems and remove the pith inside.",
+    {
+      "step": "Combine all ingredients in a blender and blend until smooth. If you are using xanthan gum, whisk together the xanthan gum and oil until homogenous before combining with the other ingredients. This will prevent clumping.",
+      "ingredients": [1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  ],
+  "created_at": "2026-04-05"
+}

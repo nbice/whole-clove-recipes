@@ -1,0 +1,120 @@
+{
+  "title": "green pepper soup",
+  "description": "",
+  "category": "mains",
+  "tags": "soup, peppers, spicy",
+  "ingredients": [
+    {
+      "group": "soup",
+      "items": [
+        {
+          "qty": 1,
+          "item": "poblano pepper"
+        },
+        {
+          "qty": 2,
+          "item": "jalapeños"
+        },
+        {
+          "qty": "1/2",
+          "item": "onion",
+          "prep": "chopped"
+        },
+        {
+          "qty": 1,
+          "item": "large carrot",
+          "prep": "chopped"
+        },
+        {
+          "qty": 4,
+          "unit": " inch",
+          "item": "celery stalk",
+          "prep": "chopped"
+        },
+        {
+          "qty": 4,
+          "item": "garlic cloves"
+        },
+        {
+          "item": "salt"
+        },
+        {
+          "qty": 3,
+          "unit": "C",
+          "item": "chicken stock"
+        },
+        {
+          "qty": "4-6",
+          "item": "cremini mushrooms",
+          "prep": "chopped"
+        },
+        {
+          "item": "msg"
+        },
+        {
+          "item": "black pepper"
+        },
+        {
+          "qty": "1/2",
+          "unit": "C",
+          "item": "cilantro"
+        },
+        {
+          "qty": 2,
+          "item": "limes",
+          "prep": "juice of"
+        }
+      ]
+    },
+    {
+      "group": "toppings",
+      "items": [
+        {
+          "item": "corn bread croutons"
+        },
+        {
+          "item": "fire roasted corn"
+        },
+        {
+          "item": "bacon"
+        }
+      ]
+    }
+  ],
+  "directions": [
+    {
+      "group": "soup",
+      "directions": [
+        {
+          "step": "Broil peppers, rotating often until evenly charred. Place in a metal bowl and cover with plastic wrap, set aside.",
+          "ingredients": [0, 1]
+        },
+        {
+          "step": "Add onion, carrot, celery, mushrooms, and salt to a medium stock pot. Sauté on medium heat until translucent. Add garlic and sauté 1 minute.",
+          "ingredients": [2, 3, 4, 5, 6, 8]
+        },
+        {
+          "step": "Add chicken stock to the stock pot and stir. Use a damp paper towel to remove the charred skin from the peppers. Remove the seeds and pith, roughly chop, and add to the pot. Let simmer for 10 minutes.",
+          "ingredients": [7]
+        },
+        "Remove pot from heat. Use an immersion blender to blend everything until smooth.",
+        {
+          "step": "Put soup on low heat. Add more salt, msg, and black pepper to taste.",
+          "ingredients": [9, 10]
+        },
+        "Place soup on low heat uncovered for 10 minutes. The soup is done at this point, but letting it cook on low for a while will give it more flavor. Cover with a lid and keep on low until ready to eat.",
+        {
+          "step": "Remove from heat. Add cilantro and lime juice. Blend again until smooth.",
+          "ingredients": [11, 12]
+        }
+      ]
+    },
+    {
+      "group": "toppings",
+      "directions": [
+        "Ladle into a bowl and top with croutons, corn, and bacon."
+      ]
+    }
+  ],
+  "created_at": "2026-04-05"
+}

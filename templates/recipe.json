@@ -1,0 +1,35 @@
+{
+  "title": "Recipe name",
+  "description": "oneliner",
+  "category": "beverages, desserts, main, side, bread",
+  "tags": "",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "inactive_time": "",
+  "total_time": "",
+  "yields": "how much does the recipe make",
+  "equipment": ["Glass flip-top bottles", "Large Stock Pot"],
+  "ingredients": [
+    {
+      "group": "group name",
+      "items": [
+        {"qty": 120, "unit": "g", "item": "yeast", "prep": "active"}
+      ]
+    }
+    
+  ],
+  "amount_variations": ["0.5x", "2x"],
+  "directions": [
+    {
+      "group":"group name",
+      "directions": [
+        {
+          "step": "Steps can be objects like this with specific ingredients listed underneath",
+          "ingredients": [0]
+        },
+        "or if no new ingredients are introduced it can just be a string"   
+      ]
+    }
+  ],
+  "notes": ["Helpful tips"]
+}

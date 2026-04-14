@@ -1,0 +1,46 @@
+{
+  "title": "pepper jam",
+  "description": "",
+  "category": "preserves",
+  "tags": "jam, peppers, spicy",
+  "ingredients": [
+    {
+      "qty": 1,
+      "unit": "lb",
+      "item": "cayenne peppers",
+      "prep": "stems removed"
+    },
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "cider vinegar"
+    },
+    {
+      "qty": 3,
+      "unit": "C",
+      "item": "sugar"
+    },
+    {
+      "qty": 35,
+      "unit": "g",
+      "item": "low sugar pectin" ,
+      "prep": "1 packet"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Add the cayenne peppers to a food processor and process for a few minutes until finely chopped.",
+      "ingredients": [0]
+    },
+    {
+      "step": "Add the chopped peppers, vinegar, and pectin to a pot. Bring to a rolling boil, stirring constantly.",
+      "ingredients": [1, 3]
+    },
+    {
+      "step": "Take off the heat and add the sugar. Place pot back on the heat and stir constantly. Return to a boil and then stir for 1 minute. Remove from heat and spoon off any orange foam.",
+      "ingredients": [2]
+    },
+    "If canning, immediately fill your prepared canning jars and boil sealed jars in a water bath for 10 minutes to process. Remove from water bath and set jars on a towel to cool"
+  ],
+  "created_at": "2026-04-05"
+}

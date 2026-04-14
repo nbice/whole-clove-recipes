@@ -1,0 +1,46 @@
+{
+  "title": "cinnamon roasted pecans",
+  "description": "",
+  "category": "desserts",
+  "tags": "nuts",
+  "prep_time": "5 minutes",
+  "cook_time": "20 minutes",
+  "total_time": "25",
+  "equipment": [],
+  "ingredients": [
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "pecan halves"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "unsalted butter",
+      "prep": "melted"
+    },
+    {
+      "qty": "1/2",
+      "unit": "t",
+      "item": "salt"
+    },
+    {
+      "qty": "1",
+      "unit": "t",
+      "item": "cinnamon",
+      "prep": "ground"
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [
+    {
+      "step": "Preheat oven to 350°F. In a large bowl, toss the pecans with the melted butter, salt, and cinnamon. Place on a parchment lined sheet tray and bake in the oven for 20 minutes or until slightly darker and aromatic, stirring halfway through.",
+      "ingredients": [0, 1, 2, 3]
+    },
+    "Cool completely."
+  ],
+  "created_at": "2026-03-19"
+}

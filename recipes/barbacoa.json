@@ -1,0 +1,77 @@
+{
+  "title": "barbacoa",
+  "description": "",
+  "category": "mains",
+  "tags": "beef, mexican",
+  "equipment": [
+    "dutch oven"
+  ],
+  "ingredients": [
+    {
+      "qty": 2,
+      "unit": "lbs",
+      "item": "chuck roast"
+    },
+    {
+      "qty": 1,
+      "item": "sweet onion"
+    },
+    {
+      "qty": 5,
+      "unit": " cloves",
+      "item": "garlic"
+    },
+    {
+      "qty": 2,
+      "item": "chipotle chilis"
+    },
+    {
+      "qty": 5,
+      "item": "chiles de arbol"
+    },
+    {
+      "item": "smoked paprika"
+    },
+    {
+      "qty": 4,
+      "unit": "C",
+      "item": "beef stock"
+    },
+    {
+      "item": "salt"
+    },
+    {
+      "item": "pepper"
+    },
+    {
+      "item": "cumin"
+    },
+    {
+      "item": "msg"
+    },
+    {
+      "item": "oregano"
+    },
+    {
+      "item": "chili powder"
+    }
+  ],
+  "directions": [
+    "Heat dutch oven over medium-high heat.",
+    {
+      "step": "Cut beef into pieces if needed. Salt and sear in hot pan for 2-3 minutes per side until a brown crust forms.",
+      "ingredients": [0, 7]
+    },
+    {
+      "step": "Remove beef. Add onions, garlic, peppers, and spices. Cook until fragrant. Add beef stock.",
+      "ingredients": [1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12]
+    },
+    "Add beef back to the pot. Bring to a boil, then reduce to a simmer.",
+    "Simmer for several hours until beef is very tender and shreds easily."
+  ],
+  "notes": [
+    "I used 3 lbs of meat and 1.5x everything. Beef stock preferred. Used around 3g of every spice but could use more.",
+    "Can bake in oven at 375°F."
+  ],
+  "created_at": "2026-04-05"
+}

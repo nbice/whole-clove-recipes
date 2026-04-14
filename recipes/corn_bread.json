@@ -1,0 +1,77 @@
+{
+  "title": "corn bread",
+  "description": "",
+  "category": "bread",
+  "tags": "",
+  "equipment": [
+    "10 inch cast iron skillet"
+  ],
+  "ingredients": [
+    {
+      "qty": 170,
+      "unit": "g",
+      "item": "corn meal"
+    },
+    {
+      "qty": 110,
+      "unit": "g",
+      "item": "flour"
+    },
+    {
+      "qty": 60,
+      "unit": "g",
+      "item": "sugar"
+    },
+    {
+      "qty": 8,
+      "unit": "g",
+      "item": "baking powder"
+    },
+    {
+      "qty": 5,
+      "unit": "g",
+      "item": "salt"
+    },
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "whole milk"
+    },
+    {
+      "qty": 1,
+      "item": "egg"
+    },
+    {
+      "qty": 44,
+      "unit": "g",
+      "item": "butter",
+      "prep": "melted"
+    },
+    {
+      "qty": 30,
+      "unit": "g",
+      "item": "butter"
+    }
+  ],
+  "directions": [
+    "Preheat oven to 425°F with the cast iron skillet inside.",
+    {
+      "step": "Whisk together corn meal, flour, sugar, salt, and baking powder in a medium bowl.",
+      "ingredients": [0, 1, 2, 3, 4]
+    },
+    {
+      "step": "In a large bowl, whisk the egg, add the milk, and add the flour mixture. Stir until combined. Add melted butter and stir again.",
+      "ingredients": [5, 6, 7]
+    },
+    {
+      "step": "Once preheated, add the remaining butter to the hot skillet.",
+      "ingredients": [8]
+    },
+    "Once the butter has melted, add the batter to the pan and place in the oven.",
+    "Bake for 15-18 minutes or until a toothpick comes out with a few crumbs."
+  ],
+  "notes": [
+    "Optionally: add chopped jalapeños or bacon to the batter before adding to the hot pan."
+  ],
+  "created_at": "2026-04-05"
+}

@@ -1,0 +1,31 @@
+{
+  "title": "smoked ribs",
+  "description": "oneliner",
+  "category": "mains",
+  "tags": "barbecue",
+  "yields": "how much does the recipe make",
+  "equipment": [
+    "smoker"
+  ],
+  "ingredients": [
+    {
+      "qty": 120,
+      "unit": "g",
+      "item": "yeast",
+      "prep": "active"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Steps can be objects like this with specific ingredients listed underneath",
+      "ingredients": [
+        0
+      ]
+    },
+    "or if no new ingredients are introduced it can just be a string"
+  ],
+  "notes": [
+    "Helpful tips"
+  ],
+  "created_at": "2026-03-19"
+}

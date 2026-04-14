@@ -1,0 +1,90 @@
+{
+  "title": "chocolate ice cream",
+  "description": "",
+  "category": "desserts",
+  "tags": "chocolate",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "inactive_time": "18 hours",
+  "total_time": "",
+  "yields": "2 quarts of ice cream",
+  "equipment": [
+    "ice cream maker"
+  ],
+  "ingredients": [
+    {
+      "qty": 6,
+      "item": "egg yolks"
+    },
+    {
+      "qty": 340,
+      "unit": "g",
+      "item": "honey"
+    },
+    {
+      "qty": 500,
+      "unit": "ml",
+      "item": "whole milk"
+    },
+    {
+      "qty": 500,
+      "unit": "ml",
+      "item": "heavy cream"
+    },
+    {
+      "qty": 60,
+      "unit": "g",
+      "item": "cayenne pepper",
+      "prep": "fresh"
+    },
+    {
+      "qty": 4,
+      "unit": "t",
+      "item": "vanilla extract"
+    },
+    {
+      "qty": "pinch of",
+      "item": "salt"
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [
+    {
+      "step": "Set aside the cream in a large metal bowl. Set that bowl over another bowl filled with ice.",
+      "ingredients": [
+        3
+      ]
+    },
+    {
+      "step": "Roughly chop the cayenne peppers. Add the peppers, milk, and honey to a medium sauce pot and set over med-low heat. Let this cook for 10 minutes to let allow the peppers to steep in the milk. Stir occasionally and be careful not to let the milk boil, it should barely get to a simmer.",
+      "ingredients": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "step": "In a heat proof bowl whisk together the ehh yolks. Carefully stream in the hot milk from the stove into the egg yolks while constantly whisking. Make sure you are slowly pouring in the milk or simply add in batches, about 1 ladle at a time. This will prevent the egg yolk from cooking and scrambling. After you have added in about half of the hot milk mixture into the eggs yolks, pour the eggs yolks into the sauce pot with the milk and return to the stove top. Cook over med-low heat, stirring constantly, for 2 - 5 minutes or until the custard can coat the back of a spoon and running your finger across the spoon leaves a distinct line.",
+      "ingredients": [
+        0
+      ]
+    },
+    {
+      "step": "As soon as the custard is ready remove from the heat and pour into the chilled cream using a fine mesh strainer to catch the solid ingredients, whisking constantly. Add the vanilla and salt while continuing to whisk. Keep whisking for a few more minutes to bring the hot custard to room temperature.",
+      "ingredients": [
+        5,
+        6
+      ]
+    },
+    "Once cooled to room temperature, cover the bowl with plastic wrap making sure the wrap makes contact with the custard. This is to prevent a film from forming during the chilling process. Transfer to the fridge and chill for at least 6 hours or overnight.",
+    "Prepare your ice cream maker according to the manufacturer's instructions. Add the custard to the ice cream maker and churn until a soft serve consistency is reached, 20 - 40 minutes. Transfer to your desired container and freeze for 12 hours."
+  ],
+  "notes": [
+    "The frozen custard can be placed in any type of container but I recommend using a glass bread pan or baking dish and freezing the glass before churning the custard. This will prevent the custard from melting after it's been transferred to the container.",
+    "The best way to thaw ice cream is to transfer from the freezer to the fridge 20 - 30 minutes before serving. Thawing at room temperature is fine but the outside of the ice cream will be softer than the center."
+  ],
+  "created_at": "2026-03-19"
+}

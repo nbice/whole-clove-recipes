@@ -1,0 +1,48 @@
+{
+  "title": "smoked pork butt",
+  "description": "",
+  "category": "mains",
+  "tags": "barbecue, pork",
+  "equipment": [
+    "smoker"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "item": "bone-in pork shoulder"
+    },
+    {
+      "item": "rib rub"
+    },
+    {
+      "qty": 65,
+      "unit": "g",
+      "item": "coarse sea salt"
+    },
+    {
+      "qty": 1,
+      "item": "stick of butter"
+    }
+  ],
+  "directions": [
+    "The night before smoking, clean the butt by removing the silver skin and place on a wire rack over a sheet tray. Place in the fridge overnight.",
+    {
+      "step": "The next day, preheat smoker to 225°F. Take pork out of the fridge and season generously with rub. Place the pork on the smoker fat side up. Add apple (or oak or mesquite) wood chips.",
+      "ingredients": [1]
+    },
+    "Add wood chips as needed, every 30-45 minutes. Two hours in, add butter on top of the pork.",
+    "Keep smoking until a dark brown and black crust has formed on the outside of the pork (usually around 165°F internal temp). Spray with water every 60 minutes to keep moist.",
+    {
+      "step": "Once the bark has formed, you can wrap the pork tightly in butcher paper or heavy duty aluminum foil. Add the rest of your butter.",
+      "ingredients": [3]
+    },
+    "Place the wrapped pork back on the smoker (or in the oven, there is no need to add more smoke at this stage).",
+    "Once the pork reaches an internal temp of 200°F, pull it off the smoker and let it rest for at least 1 hour.",
+    "When ready to eat, chop pork or shred with hands and serve."
+  ],
+  "notes": [
+    "Cooking time varies by the size of the shoulder. Expect at least 1 hour/lb of meat plus 1 hour rest.",
+    "Use ~65g (≈ 37.5g/lb) salt. Will depend on the size and shape of the pork butt."
+  ],
+  "created_at": "2026-04-05"
+}

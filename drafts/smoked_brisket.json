@@ -1,0 +1,70 @@
+{
+  "title": "smoked brisket",
+  "description": "",
+  "category": "mains",
+  "tags": "barbecue, beef",
+  "equipment": [
+    "smoker"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "item": "whole brisket"
+    },
+    {
+      "item": "coarse sea salt"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "black pepper"
+    },
+    {
+      "qty": "1/2",
+      "unit": "T",
+      "item": "mustard powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "smoked paprika"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "garlic powder"
+    },
+    {
+      "item": "worcestershire sauce",
+      "prep": "optional"
+    }
+  ],
+  "directions": [
+    {
+      "step": "The day before cooking, trim the fat cap to be between 1/4 and 1/2 inch. Trim off any excess meat/fat along the sides to make the brisket round. Score the fat cap. You can chop up the fat into small pieces and render it down by placing the fat in a small sauce pan on the stove over low heat. Let it cook until all of that fat pieces have turned a dark brown color. Or for an even smokier flavor place the fat in an aluminum pan on the smoker while the brisket is cooking. Pour through a fine mesh strainer and save the tallow to use later on in the recipe.",
+      "ingredients": [0]
+    },
+    {
+      "step": "Generously cover the entire brisket with the salt. It will bring out the flavor of the meat, and you will want to use more salt than you normally would. Place the salted brisket on a wire rack over a baking sheet and place in the fridge overnight.",
+      "ingredients": [1]
+    },
+    "The next day, preheat the smoker to 225°F and take the brisket out of the fridge.",
+    {
+      "step": "Combine all spices into a bowl and whisk together until thoroughly combined. This recipe should make enough for a 12 lb brisket but you may need more for a larger brisket. Use all of the spice mixture to coat the entire brisket. Be sure to get into the score marks on the fat cap.",
+      "ingredients": [2, 3, 4, 5]
+    },
+    {
+      "step": "Optionally inject the meat with worcestershire sauce. This adds more sodium and a little flavor inside the meat.",
+      "ingredients": [6]
+    },
+    "Place the brisket on the smoker, fat side up, and feed the smoker with wood chips for continuous smoke.",
+    "Pull the brisket off the smoker once a good dark bark has developed. The exterior should be completely dark and starting to turn hard. It will look burnt. This is usually ~165°F but it's okay if it takes longer.",
+    "Wrap the brisket tightly in butcher paper (or heavy duty foil) and pour on a generous amount of the rendered beef tallow on it before wrapping.",
+    "Place back on the smoker and cook until an internal temp of 203°F.",
+    "Place the brisket in a cooler for at least 1 hour (preferably more) before unwrapping and slicing."
+  ],
+  "notes": [
+    "This recipe calls for a dry brine. I do not measure the salt; just generously cover the entire brisket with a coarse sea salt."
+  ],
+  "created_at": "2026-04-05"
+}
