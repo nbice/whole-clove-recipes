@@ -10,7 +10,7 @@
     {
       "qty": 170,
       "unit": "g",
-      "item": "corn meal"
+      "item": "yellow corn meal"
     },
     {
       "qty": 110,
@@ -68,10 +68,10 @@
       "ingredients": [8]
     },
     "Once the butter has melted, add the batter to the pan and place in the oven.",
-    "Bake for 15-18 minutes or until a toothpick comes out with a few crumbs."
+    "Bake for 15-18 minutes or until a toothpick comes out with a few crumbs. Let cool for 10 minutes."
   ],
   "notes": [
-    "Optionally: add chopped jalapeños or bacon to the batter before adding to the hot pan."
+    "Optionally: fold in chopped jalapeños or bacon to the batter before adding to the hot pan."
   ],
   "created_at": "2026-04-05"
 }

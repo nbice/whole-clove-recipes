@@ -1,0 +1,68 @@
+{
+  "title": "ribeye steak",
+  "description": "the best method for a perfect steak",
+  "category": "mains",
+  "tags": "barbecue",
+  "equipment": [
+    "electric smoker",
+    "whiskey barrel wood chips",
+    "cooling rack",
+    "12\" cast iron skillet"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "item": "ribeye steak",
+      "prep": "2\" thick"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "coarse sea salt"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "cooking oil"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "black pepper",
+      "prep": "freshly ground"
+    },
+    {
+      "qty": 3,
+      "unit": "T",
+      "item": "butter"
+    },
+    {
+      "qty": 2,
+      "item": "cloves of garlic",
+      "prep": "minced"
+    },
+    {
+      "qty": 1,
+      "item": "sprig of fresh rosemary",
+      "prep": "optional"
+    }
+  ],
+  "directions": [
+    {
+      "step": "The day before cooking, trim any excess fat from the edge of the ribeye if necessary. Generously cover the steak on all sides with the coarse sea salt. Yuo may need more than 1 tablespoon. That's ok, you will need to use more salt than you typically would. Place the salted steak on a cooling rack and refrigerate overnight.",
+      "ingredients": [0, 1]
+    },
+    "The next day preheat your smoker to 225°F. You can use any smoker you like and any type of wood or charcoal. I use an electric smoker and wood chips made from whiskey barrels, they should be easy to find at grocery stores or sporting goods stores. If you do not have a smoker simply bake the steak in the oven at 225°F. Once the smoker is ready add the steak and smoke for about 2 hours or until an internal temperature of 115°F is reached. Add more wood chips every 20 - 40 minutes as needed. Do not guess the temperature. Use a meat probe to periodically check the temperature of the middle of the steak or use a wireless meat probe to continuously monitor.",
+    {
+      "step": "Start preheating a 12\" cast iron skillet on the stove top over high heat 10 minutes before the steak is removed from the smoker. Once the steak is removed from the smoker, add high heat (avocado) cooking oil to the cast iron pan. Sear the steak in the pan for 2 minutes on every side. Remove the steak from the pan and remove the pan from the heat for a few minutes to cool. While the pan is cooling season the steak on all sides with freshly ground black pepper",
+      "ingredients": [2, 3]
+    },
+    {
+      "step": "Once the cast iron pan has cooled slightly set over medium heat and add the butter and minced garlic. Once the butter has started to brown add the steak to the pan. Add the rosemary to the butter at this point if you are using it. Be sure to lightly crush the leaves in your hand before using to release the aroma. Tilt the cast iron pan towards you and use a large spoon to baste the steak with the garlic infused butter. Baste for 1 minute.",
+      "ingredients": [4, 5, 6]
+    },
+    "Remove the steak from the pan and set on a cooling rack placed over a sheet tray to rest. Add the browned garlic and rosemary sprig to the top of the steak as it rests. Let the steak rest for 10 minutes before cutting into it."
+  ],
+  "notes": [],
+  "created_at": "2026-03-19"
+}

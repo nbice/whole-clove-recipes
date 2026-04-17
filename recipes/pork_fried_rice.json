@@ -58,13 +58,16 @@
       "item": "sesame oil"
     },
     {
-      "item": "salt"
+      "item": "salt",
+      "prep": "to taste"
     },
     {
-      "item": "pepper"
+      "item": "pepper",
+      "prep": "to taste"
     },
     {
-      "item": "msg"
+      "item": "msg",
+      "prep": "to taste"
     },
     {
       "qty": 500,
@@ -97,8 +100,8 @@
       "ingredients": [6]
     },
     {
-      "step": "Add pork, frozen peas and carrots, and msg, pepper, and salt to taste. Cook until the peas and carrots are heated all the way through and soft, 3-5 minutes.",
-      "ingredients": [7, 11, 12, 13]
+      "step": "Add pork, frozen peas and carrots, msg, pepper, and salt to taste. Cook until the peas and carrots are heated all the way through and soft, 3-5 minutes.",
+      "ingredients": [7, 11, 12, 13, 10]
     },
     {
       "step": "Turn the wok off the heat. Add soy sauce and sesame oil then combine.",

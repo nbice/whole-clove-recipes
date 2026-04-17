@@ -305,12 +305,12 @@ def build_home(template, recipes, search_json="[]"):
 
     html = '<div class="home">\n'
     html += '    <div class="recipe-index">\n'
-    html += '        <h2>recent recipes</h2>\n'
+    html += '        <h2>recently added</h2>\n'
     html += '        <ul class="recipe-list">\n'
     html += _render_home_list(recent)
     html += '        </ul>\n'
     if favorites:
-        html += "        <h2>chef's favorites</h2>\n"
+        html += "        <h2>featured</h2>\n"
         html += '        <ul class="recipe-list">\n'
         html += _render_home_list(favorites)
         html += '        </ul>\n'

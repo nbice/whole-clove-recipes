@@ -1,6 +1,6 @@
 {
   "title": "cilantro lime sauce",
-  "description": "a roasted green sauce",
+  "description": "",
   "category": "sauces",
   "tags": "sauce, cilantro, lime, spicy",
   "ingredients": [
@@ -52,9 +52,9 @@
       "ingredients": [0]
     },
     "Set peppers in a metal bowl, cover with plastic wrap, and let sit for 5 minutes.",
-    "Use a wet paper towel to remove the charred skin from the peppers. Use a knife to cut off the stems and remove the pith inside.",
+    "Remove the peppers from the bowl and use a wet paper towel to remove the charred skin from the peppers, do not rinse with running water. Use a knife to cut off the stems and remove the pith inside.",
     {
-      "step": "Combine all ingredients in a blender and blend until smooth. If you are using xanthan gum, whisk together the xanthan gum and oil until homogenous before combining with the other ingredients. This will prevent clumping.",
+      "step": "Combine all ingredients in a blender and blend until smooth. If you are using xanthan gum, whisk together the xanthan gum and oil until homogenous before combining with the other ingredients. This will prevent clumping. The sauce can be used right away but is best served after chilled in the fridge overnight.",
       "ingredients": [1, 2, 3, 4, 5, 6, 7, 8]
     }
   ],
