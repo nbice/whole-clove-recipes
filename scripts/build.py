@@ -20,6 +20,46 @@ def render_links(text):
     if not isinstance(text, str):
         return text
     return RECIPE_LINK_RE.sub(r'<a href="\2.html">\1</a>', text)
+
+
+def plain_text(text):
+    """Strip [label](recipes/slug) markdown links to just the label."""
+    if not isinstance(text, str):
+        return text
+    return RECIPE_LINK_RE.sub(r'\1', text)
+
+
+DURATION_RE = re.compile(
+    r'^\s*(?:(?P<h>\d+(?:\.\d+)?)\s*hours?)?\s*(?:(?P<m>\d+)\s*minutes?)?\s*$',
+    re.IGNORECASE,
+)
+
+
+def to_iso_duration(text):
+    """Convert '10 minutes', '2 hours', '2.5 hours', '2 hours 55 minutes' to ISO 8601.
+
+    Returns None for empty/unparseable values (ranges, bare numbers, days, etc.).
+    """
+    if not isinstance(text, str) or not text.strip():
+        return None
+    m = DURATION_RE.match(text)
+    if not m or not (m.group("h") or m.group("m")):
+        return None
+    total_minutes = 0.0
+    if m.group("h"):
+        total_minutes += float(m.group("h")) * 60
+    if m.group("m"):
+        total_minutes += int(m.group("m"))
+    total_minutes = int(round(total_minutes))
+    if total_minutes <= 0:
+        return None
+    hours, minutes = divmod(total_minutes, 60)
+    out = "PT"
+    if hours:
+        out += f"{hours}H"
+    if minutes:
+        out += f"{minutes}M"
+    return out
 RECIPES_DIR = os.path.join(ROOT, "../recipes")
 TEMPLATES_DIR = os.path.join(ROOT, "../templates")
 STATIC_DIR = os.path.join(ROOT, "../static")
@@ -55,9 +95,9 @@ def load_recipe(filepath):
     return data
 
 
-def format_ingredient(item, include_prep=True):
+def format_ingredient(item, include_prep=True, text_transform=render_links):
     if isinstance(item, str):
-        return render_links(item)
+        return text_transform(item)
     result = ""
     if item.get("qty") is not None:
         result += str(item["qty"])
@@ -69,7 +109,7 @@ def format_ingredient(item, include_prep=True):
         result += item["item"]
     if include_prep and item.get("prep"):
         result += ", " + item["prep"]
-    return render_links(result)
+    return text_transform(result)
 
 
 def format_step_ingredient(ingredients, ref):
@@ -204,12 +244,13 @@ def render_recipe(r):
     return html
 
 
-def build_page(template, title, content, description, url, search_index_json="[]"):
+def build_page(template, title, content, description, url, search_index_json="[]", jsonld=""):
     page = template.replace("{{title}}", title)
     page = page.replace("{{content}}", content)
     page = page.replace("{{description}}", escape_attr(description))
     page = page.replace("{{url}}", url)
     page = page.replace("{{search_index}}", search_index_json)
+    page = page.replace("{{jsonld}}", jsonld)
     return page
 
 
@@ -218,6 +259,64 @@ def recipe_description(r):
     if desc:
         return desc
     return f'{r["title"]} — a {r["category"]} recipe from The Whole Clove.'
+
+
+def flatten_ingredients_plain(ingredients):
+    """Flatten (possibly grouped) ingredients into a list of plain-text strings."""
+    out = []
+    has_groups = any(isinstance(g, dict) and "group" in g for g in ingredients)
+    groups = ingredients if has_groups else [{"items": ingredients}]
+    for g in groups:
+        for item in g.get("items", []):
+            out.append(format_ingredient(item, text_transform=plain_text))
+    return out
+
+
+def flatten_directions_plain(directions):
+    """Flatten (possibly grouped) directions into a list of plain-text step strings."""
+    out = []
+    has_groups = any(isinstance(s, dict) and "group" in s for s in directions)
+    groups = directions if has_groups else [{"directions": directions}]
+    for g in groups:
+        for step in g.get("directions", []):
+            text = step if isinstance(step, str) else step["step"]
+            out.append(plain_text(text))
+    return out
+
+
+def build_recipe_jsonld(r):
+    """Build a schema.org Recipe JSON-LD <script> block for a recipe."""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": r["title"],
+        "description": recipe_description(r),
+        "recipeCategory": r["category"],
+        "author": {"@type": "Organization", "name": "The Whole Clove"},
+        "url": page_url(r["slug"] + ".html"),
+    }
+    if r.get("yields"):
+        data["recipeYield"] = r["yields"]
+    for key, schema_key in [("prep_time", "prepTime"), ("cook_time", "cookTime"), ("total_time", "totalTime")]:
+        iso = to_iso_duration(r.get(key, ""))
+        if iso:
+            data[schema_key] = iso
+    tags = [t.strip() for t in (r.get("tags") or "").split(",") if t.strip()]
+    if tags:
+        data["keywords"] = ", ".join(tags)
+    if r.get("ingredients"):
+        ings = flatten_ingredients_plain(r["ingredients"])
+        if ings:
+            data["recipeIngredient"] = ings
+    if r.get("directions"):
+        steps = flatten_directions_plain(r["directions"])
+        if steps:
+            data["recipeInstructions"] = [{"@type": "HowToStep", "text": s} for s in steps]
+    if r.get("image"):
+        data["image"] = r["image"]
+    # Escape </ so the JSON can't close the surrounding <script> tag.
+    payload = json.dumps(data, separators=(",", ":")).replace("</", "<\\/")
+    return f'<script type="application/ld+json">{payload}</script>'
 
 
 def build_index(template, recipes, search_json="[]"):
@@ -424,6 +523,7 @@ def main():
             recipe_description(data),
             page_url(out_name),
             search_json,
+            jsonld=build_recipe_jsonld(data),
         )
         with open(os.path.join(OUTPUT_DIR, out_name), "w") as f:
             f.write(page)
