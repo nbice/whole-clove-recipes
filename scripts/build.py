@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Static site generator for The Whole Clove."""
 
+import datetime
 import json
 import os
 import re
@@ -23,6 +24,24 @@ RECIPES_DIR = os.path.join(ROOT, "../recipes")
 TEMPLATES_DIR = os.path.join(ROOT, "../templates")
 STATIC_DIR = os.path.join(ROOT, "../static")
 OUTPUT_DIR = os.path.join(ROOT, "../output")
+
+SITE_URL = "https://thewholeclove.com"
+SITE_TAGLINE = "A collection of recipes from The Whole Clove."
+
+
+def page_url(filename):
+    if filename == "index.html":
+        return SITE_URL + "/"
+    return f"{SITE_URL}/{filename}"
+
+
+def escape_attr(text):
+    return (
+        text.replace("&", "&amp;")
+            .replace('"', "&quot;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+    )
 
 
 def slugify(text):
@@ -185,11 +204,20 @@ def render_recipe(r):
     return html
 
 
-def build_page(template, title, content, search_index_json="[]"):
+def build_page(template, title, content, description, url, search_index_json="[]"):
     page = template.replace("{{title}}", title)
     page = page.replace("{{content}}", content)
+    page = page.replace("{{description}}", escape_attr(description))
+    page = page.replace("{{url}}", url)
     page = page.replace("{{search_index}}", search_index_json)
     return page
+
+
+def recipe_description(r):
+    desc = (r.get("description") or "").strip()
+    if desc:
+        return desc
+    return f'{r["title"]} — a {r["category"]} recipe from The Whole Clove.'
 
 
 def build_index(template, recipes, search_json="[]"):
@@ -248,7 +276,8 @@ def build_index(template, recipes, search_json="[]"):
 </script>
 '''
 
-    return build_page(template, "recipes", html, search_json)
+    description = f"All {len(recipes)} recipes from The Whole Clove, organized by category."
+    return build_page(template, "recipes", html, description, page_url("recipes.html"), search_json)
 
 
 def build_category(template, category, recipes, search_json="[]"):
@@ -266,7 +295,8 @@ def build_category(template, category, recipes, search_json="[]"):
     html += '    </ul>\n'
     html += '</div>\n'
 
-    return build_page(template, category, html, search_json)
+    description = f"{category.capitalize()} recipes from The Whole Clove."
+    return build_page(template, category, html, description, page_url(slugify(category) + ".html"), search_json)
 
 
 def load_favorites():
@@ -318,7 +348,33 @@ def build_home(template, recipes, search_json="[]"):
     html += '    </div>\n'
     html += '</div>\n'
 
-    return build_page(template, "The Whole Clove", html, search_json)
+    return build_page(template, "The Whole Clove", html, SITE_TAGLINE, page_url("index.html"), search_json)
+
+
+def build_sitemap(recipes, categories):
+    """Generate sitemap.xml listing every page with a lastmod hint."""
+    today = datetime.date.today().isoformat()
+    entries = [(page_url("index.html"), today), (page_url("recipes.html"), today)]
+    for cat in sorted(categories):
+        entries.append((page_url(slugify(cat) + ".html"), today))
+    for r in recipes:
+        lastmod = r.get("created_at") or today
+        entries.append((page_url(r["slug"] + ".html"), lastmod))
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, lastmod in entries:
+        lines.append(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod></url>")
+    lines.append("</urlset>\n")
+    return "\n".join(lines)
+
+
+def build_robots():
+    return (
+        "User-agent: *\n"
+        "Allow: /\n"
+        f"Sitemap: {SITE_URL}/sitemap.xml\n"
+    )
 
 
 def build_search_index(recipes):
@@ -360,8 +416,15 @@ def main():
 
     # Build recipe pages
     for data in recipes:
-        page = build_page(template, data["title"], render_recipe(data), search_json)
         out_name = data["slug"] + ".html"
+        page = build_page(
+            template,
+            data["title"],
+            render_recipe(data),
+            recipe_description(data),
+            page_url(out_name),
+            search_json,
+        )
         with open(os.path.join(OUTPUT_DIR, out_name), "w") as f:
             f.write(page)
 
@@ -382,6 +445,12 @@ def main():
     # Copy static assets
     if os.path.exists(STATIC_DIR):
         shutil.copytree(STATIC_DIR, os.path.join(OUTPUT_DIR, "static"))
+
+    # SEO: sitemap + robots
+    with open(os.path.join(OUTPUT_DIR, "sitemap.xml"), "w") as f:
+        f.write(build_sitemap(recipes, by_cat.keys()))
+    with open(os.path.join(OUTPUT_DIR, "robots.txt"), "w") as f:
+        f.write(build_robots())
 
     # Write CNAME for GitHub Pages
     with open(os.path.join(OUTPUT_DIR, "CNAME"), "w") as f:
