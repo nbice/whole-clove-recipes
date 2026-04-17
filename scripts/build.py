@@ -478,6 +478,113 @@ def build_robots():
     )
 
 
+def _recipe_time_line(r):
+    parts = []
+    for label, key in [("Prep", "prep_time"), ("Cook", "cook_time"),
+                       ("Inactive", "inactive_time"), ("Total", "total_time")]:
+        val = r.get(key)
+        if val:
+            parts.append(f"{label}: {val}")
+    if r.get("yields"):
+        parts.append(f"Yields: {r['yields']}")
+    return " | ".join(parts)
+
+
+def build_llms_txt(recipes):
+    """Concise site index for LLM agents (llmstxt.org)."""
+    by_cat = {}
+    for r in sorted(recipes, key=lambda r: r["title"]):
+        by_cat.setdefault(r["category"], []).append(r)
+
+    lines = [
+        "# The Whole Clove",
+        "",
+        "> A collection of recipes. No life stories, just recipes.",
+        "",
+        f"{len(recipes)} recipes organized by category. Each recipe page includes "
+        "ingredients, directions, timing, yield, and schema.org Recipe JSON-LD. "
+        "See /llms-full.txt for the full content of every recipe inline.",
+        "",
+    ]
+    for cat in sorted(by_cat):
+        lines.append(f"## {cat}")
+        lines.append("")
+        for r in by_cat[cat]:
+            desc = (r.get("description") or "").strip()
+            if not desc and r.get("tags"):
+                desc = r["tags"]
+            link = f"[{r['title']}]({page_url(r['slug'] + '.html')})"
+            lines.append(f"- {link}: {desc}" if desc else f"- {link}")
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def build_llms_full_txt(recipes):
+    """Full-content LLM-friendly dump of every recipe."""
+    lines = [
+        "# The Whole Clove",
+        "",
+        "> A collection of recipes. No life stories, just recipes.",
+        "",
+    ]
+    for r in sorted(recipes, key=lambda r: r["title"]):
+        lines.append(f"## {r['title']}")
+        lines.append("")
+        lines.append(f"- URL: {page_url(r['slug'] + '.html')}")
+        lines.append(f"- Category: {r['category']}")
+        if r.get("tags"):
+            lines.append(f"- Tags: {r['tags']}")
+        time_line = _recipe_time_line(r)
+        if time_line:
+            lines.append(f"- {time_line}")
+        if r.get("description"):
+            lines.append("")
+            lines.append(r["description"])
+
+        if r.get("equipment"):
+            lines.append("")
+            lines.append("### Equipment")
+            for item in r["equipment"]:
+                lines.append(f"- {plain_text(item)}")
+
+        if r.get("ingredients"):
+            lines.append("")
+            lines.append("### Ingredients")
+            has_groups = any(isinstance(g, dict) and "group" in g for g in r["ingredients"])
+            groups = r["ingredients"] if has_groups else [{"items": r["ingredients"]}]
+            for g in groups:
+                if g.get("group"):
+                    lines.append("")
+                    lines.append(f"**{g['group']}**")
+                for item in g.get("items", []):
+                    lines.append(f"- {format_ingredient(item, text_transform=plain_text)}")
+
+        if r.get("directions"):
+            lines.append("")
+            lines.append("### Directions")
+            has_groups = any(isinstance(s, dict) and "group" in s for s in r["directions"])
+            groups = r["directions"] if has_groups else [{"directions": r["directions"]}]
+            for g in groups:
+                if g.get("group"):
+                    lines.append("")
+                    lines.append(f"**{g['group']}**")
+                for i, step in enumerate(g.get("directions", []), 1):
+                    text = step if isinstance(step, str) else step["step"]
+                    lines.append(f"{i}. {plain_text(text)}")
+
+        if r.get("notes"):
+            lines.append("")
+            lines.append("### Notes")
+            for note in r["notes"]:
+                lines.append(f"- {plain_text(note)}")
+
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def build_search_index(recipes):
     """Return a compact JSON string of the search index for inlining."""
     index = []
@@ -553,6 +660,12 @@ def main():
         f.write(build_sitemap(recipes, by_cat.keys()))
     with open(os.path.join(OUTPUT_DIR, "robots.txt"), "w") as f:
         f.write(build_robots())
+
+    # LLM discoverability (llmstxt.org)
+    with open(os.path.join(OUTPUT_DIR, "llms.txt"), "w") as f:
+        f.write(build_llms_txt(recipes))
+    with open(os.path.join(OUTPUT_DIR, "llms-full.txt"), "w") as f:
+        f.write(build_llms_full_txt(recipes))
 
     # Write CNAME for GitHub Pages
     with open(os.path.join(OUTPUT_DIR, "CNAME"), "w") as f:
