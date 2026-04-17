@@ -12,7 +12,7 @@ Requires Python 3. No dependencies.
 python3 build.py
 ```
 
-Output goes to `output/`. Open `output/index.html` in a browser to preview.
+Output goes to `output/`. Preview locally with `python3 scripts/serve.py` and visit http://localhost:8000 (handles clean URLs the same way GitHub Pages does).
 
 ## Adding a Recipe
 

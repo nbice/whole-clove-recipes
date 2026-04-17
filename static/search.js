@@ -55,7 +55,7 @@
     for (var i = 0; i < matches.length; i++) {
       var recipe = matches[i];
       var a = document.createElement("a");
-      a.href = recipe.slug + ".html";
+      a.href = recipe.slug;
       a.className = "search-result";
       a.setAttribute("role", "option");
       a.dataset.index = i;

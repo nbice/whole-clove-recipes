@@ -19,7 +19,7 @@ def render_links(text):
     """Convert [label](recipes/slug) markdown links to HTML anchors."""
     if not isinstance(text, str):
         return text
-    return RECIPE_LINK_RE.sub(r'<a href="\2.html">\1</a>', text)
+    return RECIPE_LINK_RE.sub(r'<a href="/\2">\1</a>', text)
 
 
 def plain_text(text):
@@ -70,9 +70,11 @@ SITE_TAGLINE = "A collection of recipes from The Whole Clove."
 
 
 def page_url(filename):
+    """Canonical URL for a given output filename. Strips .html for clean URLs."""
     if filename == "index.html":
         return SITE_URL + "/"
-    return f"{SITE_URL}/{filename}"
+    slug = filename[:-5] if filename.endswith(".html") else filename
+    return f"{SITE_URL}/{slug}"
 
 
 def escape_attr(text):
@@ -153,7 +155,7 @@ def render_recipe(r):
     # Header
     html += '    <div class="recipe-header">\n'
     cat_slug = slugify(r["category"])
-    html += f'        <a href="{cat_slug}.html" class="recipe-category">{r["category"]}</a>\n'
+    html += f'        <a href="/{cat_slug}" class="recipe-category">{r["category"]}</a>\n'
     html += f'        <h1>{r["title"]}</h1>\n'
     html += f'        <p class="description">{render_links(r["description"])}</p>\n'
     html += '    </div>\n\n'
@@ -333,16 +335,16 @@ def build_index(template, recipes, search_json="[]"):
     html += '            </button>\n'
     html += '            <ul class="category-dropdown-menu" role="menu" hidden>\n'
     for cat in sorted(by_cat):
-        html += f'                <li role="none"><a role="menuitem" href="{slugify(cat)}.html">{cat}</a></li>\n'
+        html += f'                <li role="none"><a role="menuitem" href="/{slugify(cat)}">{cat}</a></li>\n'
     html += '            </ul>\n'
     html += '        </div>\n'
     html += '    </div>\n'
     for cat in sorted(by_cat):
-        html += f'    <h2 class="category-heading"><a href="{slugify(cat)}.html">{cat}</a></h2>\n'
+        html += f'    <h2 class="category-heading"><a href="/{slugify(cat)}">{cat}</a></h2>\n'
         html += '    <ul class="recipe-list">\n'
         for r in by_cat[cat]:
             html += (
-                f'        <li><a href="{r["slug"]}.html">'
+                f'        <li><a href="/{r["slug"]}">'
                 f'<span class="recipe-name">{r["title"]}</span>'
                 f'<span class="recipe-desc">{r.get("description", "")}</span>'
                 f'<span class="arrow">&rarr;</span>'
@@ -385,7 +387,7 @@ def build_category(template, category, recipes, search_json="[]"):
     html += '    <ul class="recipe-list">\n'
     for r in sorted(recipes, key=lambda r: r["title"]):
         html += (
-            f'        <li><a href="{r["slug"]}.html">'
+            f'        <li><a href="/{r["slug"]}">'
             f'<span class="recipe-name">{r["title"]}</span>'
             f'<span class="recipe-desc">{r.get("description", "")}</span>'
             f'<span class="arrow">&rarr;</span>'
@@ -411,7 +413,7 @@ def _render_home_list(recipes_list, indent="            "):
     html = ""
     for r in recipes_list:
         html += (
-            f'{indent}<li><a href="{r["slug"]}.html">'
+            f'{indent}<li><a href="/{r["slug"]}">'
             f'<span class="recipe-name">{r["title"]}</span>'
             f'<span class="recipe-desc">{r.get("description", "")}</span>'
             f'<span class="arrow">&rarr;</span>'
@@ -443,7 +445,7 @@ def build_home(template, recipes, search_json="[]"):
         html += '        <ul class="recipe-list">\n'
         html += _render_home_list(favorites)
         html += '        </ul>\n'
-    html += '        <a class="more-link" href="recipes.html">more recipes &rarr;</a>\n'
+    html += '        <a class="more-link" href="/recipes">more recipes &rarr;</a>\n'
     html += '    </div>\n'
     html += '</div>\n'
 
