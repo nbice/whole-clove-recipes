@@ -1,0 +1,73 @@
+{
+  "title": "tomato basil rice",
+  "description": "comfort rice",
+  "category": "sides",
+  "tags": "rice, tomato, basil",
+  "ingredients": [
+    {
+      "qty": 2,
+      "unit": "C",
+      "item": "white rice"
+    },
+    {
+      "qty": "3 1/2",
+      "unit": "C",
+      "item": "chicken stock"
+    },
+    {
+      "qty": 4,
+      "item": "garlic cloves",
+      "prep": "minced"
+    },
+    {
+      "qty": "1/2",
+      "item": "jalapeño",
+      "prep": "diced"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "dried oregano"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "olive oil"
+    },
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "fresh basil",
+      "prep": "julienned"
+    },
+    {
+      "item": "salt",
+      "prep": "to taste"
+    },
+    {
+      "item": "pepper",
+      "prep": "to taste"
+    },
+    {
+      "qty": 3,
+      "unit": "T",
+      "item": "tomato paste"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Add the olive oil to a 5qt sauté pan and set over medium heat. Add the garlic, jalapeño, and oregano. Once the garlic is lightly browned, add rice and toast for a few minutes, stirring occasionally. Add the tomato paste and mix into the rice. Cook for 2 minutes.",
+      "ingredients": [0, 2, 3, 4, 5, 9]
+    },
+    {
+      "step": "Add the chicken stock and scrape up any bits stuck to the bottom of the pan. Add salt and pepper, then bring to a simmer. Cover the pan with a lid and cook for 20 minutes, stirring occasionally.",
+      "ingredients": [1, 7, 8]
+    },
+    {
+      "step": "Once the rice is fully cooked, remove from the heat. Stir in the basil, then cover and let sit for 10 minutes. Fluff the rice with a fork and serve.",
+      "ingredients": [6]
+    }
+  ],
+  "notes": [],
+  "created_at": "2026-04-21"
+}

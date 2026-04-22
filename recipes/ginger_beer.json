@@ -5,7 +5,7 @@
   "tags": "ginger",
   "prep_time": "10 minutes",
   "cook_time": "20 minutes",
-  "inactive_time": "2 - 5 days",
+  "inactive_time": "2-5 days",
   "yields": "2 liters",
   "equipment": [
     "glass flip-top bottles",
@@ -62,23 +62,24 @@
   ],
   "directions": [
     {
-      "step": "Bring the water to a boil in a large stock pot and set over high heat. Add the sugar and reduce to a low boil.",
+      "step": "Add water to a large stock pot and set over high heat to bring to a boil. Add the sugar and reduce to a low boil.",
       "ingredients": [0, 1]
     },
     {
-      "step": "Once the sugar has dissolved add the ginger, peppercorns, dried cayenne, and whole cloves. Boil for 5 minutes then take off the heat and let cool completely to room temperature.",
+      "step": "Once the sugar has dissolved, add the ginger, peppercorns, dried cayenne, and whole cloves. Boil for 5 minutes, then take off the heat and let cool completely to room temperature.",
       "ingredients": [2, 3, 4, 5]
     },
     {
-      "step": "Once cooled, strain the liquids through a fine mesh strainer, you can also use cheesecloth, into a large bowl. Use a spoon to push as much liquid out of the solids as possible. Add the lemons juice and ginger bug to the bowl and stir to combine.",
+      "step": "Once cooled, strain the liquid through a fine mesh strainer (cheesecloth also works) into a large bowl. Use a spoon to push as much liquid out of the solids as possible. Add the lemon juice and ginger bug to the bowl and stir to combine.",
       "ingredients": [6, 7]
     },
-    "Using a funnel, evenly divide the liquid into 2 1 liter flip-top bottles, leaving at least 1\" of head space at the top.",
-    "Store at room temperature for a few days until your desired carbonation level is reached (between 2 and 5 days). Burp the bottles once a day being careful not to let them buble up and spill over.",
-    "Once the ginger beer is bubbly you can store in the fridge without burping."
+    "Using a funnel, evenly divide the liquid into two 1-liter flip-top bottles, leaving at least 1\" of head space at the top.",
+    "Store at room temperature for a few days until your desired carbonation level is reached (between 2 and 5 days). Burp the bottles once a day, being careful not to let them bubble up and spill over.",
+    "Once the ginger beer is bubbly, you can store it in the fridge without burping."
   ],
   "notes": [
-    "If your ginger bug is not active make sure you feed it a few hours before making the ginger beer by mixing 28g of white sugar, 22g of minced ginger (peels are fine), and 60ml of filtered water into your ginger bug until the sugar dissolves. Leave out at room temperature covered loosely."
+    "If your ginger bug is not active, make sure you feed it a few hours before making the ginger beer by mixing 28g of white sugar, 22g of minced ginger (peels are fine), and 60ml of filtered water into your ginger bug until the sugar dissolves. Leave it out at room temperature, loosely covered.",
+    "This recipe uses 200g of sugar, which makes it sweet, but it's needed to balance out the other spices. For an extra-sweet version, you can use as much as 300g of sugar. You can use as little as 150g of sugar — the drink will just be spicier. However, the bug needs sugar to feed on to carbonate the drink, so I would not use less than 150g of sugar."
   ],
   "created_at": "2026-03-19"
 }
