@@ -321,6 +321,30 @@ def build_recipe_jsonld(r):
     return f'<script type="application/ld+json">{payload}</script>'
 
 
+def _category_dropdown(categories, current_slug=None):
+    """Render the category dropdown nav used on /recipes and category pages.
+
+    current_slug:
+      - "recipes": on the /recipes page (no 'all recipes' link needed).
+      - "<cat-slug>": on a category page — includes 'all recipes', excludes current.
+    """
+    html = '        <div class="category-dropdown">\n'
+    html += '            <button type="button" class="category-dropdown-toggle" aria-label="select category" aria-expanded="false" aria-haspopup="true">\n'
+    html += '                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4 L6 8 L10 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>\n'
+    html += '            </button>\n'
+    html += '            <ul class="category-dropdown-menu" role="menu" hidden>\n'
+    if current_slug and current_slug != "recipes":
+        html += '                <li role="none"><a role="menuitem" href="/recipes">all recipes</a></li>\n'
+    for cat in sorted(categories):
+        cat_slug = slugify(cat)
+        if cat_slug == current_slug:
+            continue
+        html += f'                <li role="none"><a role="menuitem" href="/{cat_slug}">{cat}</a></li>\n'
+    html += '            </ul>\n'
+    html += '        </div>\n'
+    return html
+
+
 def build_index(template, recipes, search_json="[]"):
     by_cat = {}
     for r in sorted(recipes, key=lambda r: r["title"]):
@@ -329,15 +353,7 @@ def build_index(template, recipes, search_json="[]"):
     html = '<div class="recipe-index">\n'
     html += '    <div class="recipe-index-header">\n'
     html += '        <h1>all recipes</h1>\n'
-    html += '        <div class="category-dropdown">\n'
-    html += '            <button type="button" class="category-dropdown-toggle" aria-label="filter by category" aria-expanded="false" aria-haspopup="true">\n'
-    html += '                <svg class="chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4 L6 8 L10 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>\n'
-    html += '            </button>\n'
-    html += '            <ul class="category-dropdown-menu" role="menu" hidden>\n'
-    for cat in sorted(by_cat):
-        html += f'                <li role="none"><a role="menuitem" href="/{slugify(cat)}">{cat}</a></li>\n'
-    html += '            </ul>\n'
-    html += '        </div>\n'
+    html += _category_dropdown(by_cat.keys(), current_slug="recipes")
     html += '    </div>\n'
     for cat in sorted(by_cat):
         html += f'    <h2 class="category-heading"><a href="/{slugify(cat)}">{cat}</a></h2>\n'
@@ -347,50 +363,27 @@ def build_index(template, recipes, search_json="[]"):
                 f'        <li><a href="/{r["slug"]}">'
                 f'<span class="recipe-name">{r["title"]}</span>'
                 f'<span class="recipe-desc">{r.get("description", "")}</span>'
-                f'<span class="arrow">&rarr;</span>'
                 f'</a></li>\n'
             )
         html += '    </ul>\n'
     html += '</div>\n'
-    html += '''<script>
-(function () {
-  var btn = document.querySelector('.category-dropdown-toggle');
-  var menu = document.querySelector('.category-dropdown-menu');
-  if (!btn || !menu) return;
-  function close() {
-    menu.hidden = true;
-    btn.setAttribute('aria-expanded', 'false');
-  }
-  btn.addEventListener('click', function (e) {
-    e.stopPropagation();
-    var open = !menu.hidden;
-    menu.hidden = open;
-    btn.setAttribute('aria-expanded', String(!open));
-  });
-  document.addEventListener('click', function (e) {
-    if (!e.target.closest('.category-dropdown')) close();
-  });
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') close();
-  });
-})();
-</script>
-'''
 
     description = f"All {len(recipes)} recipes from The Whole Clove, organized by category."
     return build_page(template, "recipes", html, description, page_url("recipes.html"), search_json)
 
 
-def build_category(template, category, recipes, search_json="[]"):
+def build_category(template, category, recipes, all_categories, search_json="[]"):
     html = '<div class="recipe-index">\n'
-    html += f'    <h1>{category}</h1>\n'
+    html += '    <div class="recipe-index-header">\n'
+    html += f'        <h1>{category}</h1>\n'
+    html += _category_dropdown(all_categories, current_slug=slugify(category))
+    html += '    </div>\n'
     html += '    <ul class="recipe-list">\n'
     for r in sorted(recipes, key=lambda r: r["title"]):
         html += (
             f'        <li><a href="/{r["slug"]}">'
             f'<span class="recipe-name">{r["title"]}</span>'
             f'<span class="recipe-desc">{r.get("description", "")}</span>'
-            f'<span class="arrow">&rarr;</span>'
             f'</a></li>\n'
         )
     html += '    </ul>\n'
@@ -416,9 +409,26 @@ def _render_home_list(recipes_list, indent="            "):
             f'{indent}<li><a href="/{r["slug"]}">'
             f'<span class="recipe-name">{r["title"]}</span>'
             f'<span class="recipe-desc">{r.get("description", "")}</span>'
-            f'<span class="arrow">&rarr;</span>'
             f'</a></li>\n'
         )
+    return html
+
+
+def _render_category_tiles(recipes, indent="        "):
+    by_cat = {}
+    for r in recipes:
+        by_cat.setdefault(r["category"], []).append(r)
+    html = f'{indent}<ul class="category-tiles">\n'
+    for cat in sorted(by_cat):
+        count = len(by_cat[cat])
+        noun = "recipe" if count == 1 else "recipes"
+        html += (
+            f'{indent}    <li><a href="/{slugify(cat)}">'
+            f'<span class="category-tile-name">{cat}</span>'
+            f'<span class="category-tile-count">{count} {noun}</span>'
+            f'</a></li>\n'
+        )
+    html += f'{indent}</ul>\n'
     return html
 
 
@@ -436,15 +446,23 @@ def build_home(template, recipes, search_json="[]"):
 
     html = '<div class="home">\n'
     html += '    <div class="recipe-index">\n'
-    html += '        <h2>recently added</h2>\n'
-    html += '        <ul class="recipe-list">\n'
-    html += _render_home_list(recent)
-    html += '        </ul>\n'
+    html += '        <div class="home-lists">\n'
+    html += '            <div class="home-list">\n'
+    html += '                <h2>recently added</h2>\n'
+    html += '                <ul class="recipe-list">\n'
+    html += _render_home_list(recent, indent="                    ")
+    html += '                </ul>\n'
+    html += '            </div>\n'
     if favorites:
-        html += "        <h2>featured</h2>\n"
-        html += '        <ul class="recipe-list">\n'
-        html += _render_home_list(favorites)
-        html += '        </ul>\n'
+        html += '            <div class="home-list">\n'
+        html += "                <h2>featured</h2>\n"
+        html += '                <ul class="recipe-list">\n'
+        html += _render_home_list(favorites, indent="                    ")
+        html += '                </ul>\n'
+        html += '            </div>\n'
+    html += '        </div>\n'
+    html += '        <h2>categories</h2>\n'
+    html += _render_category_tiles(recipes)
     html += '        <a class="more-link" href="/recipes">more recipes &rarr;</a>\n'
     html += '    </div>\n'
     html += '</div>\n'
@@ -643,7 +661,7 @@ def main():
         by_cat.setdefault(r["category"], []).append(r)
     for cat, cat_recipes in by_cat.items():
         with open(os.path.join(OUTPUT_DIR, slugify(cat) + ".html"), "w") as f:
-            f.write(build_category(template, cat, cat_recipes, search_json))
+            f.write(build_category(template, cat, cat_recipes, by_cat.keys(), search_json))
 
     # Build index and home
     with open(os.path.join(OUTPUT_DIR, "recipes.html"), "w") as f:

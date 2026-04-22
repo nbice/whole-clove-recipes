@@ -140,3 +140,26 @@
     }
   });
 })();
+
+// --- Category dropdown toggle (used on /recipes and category pages) ---
+(function () {
+  var btn = document.querySelector(".category-dropdown-toggle");
+  var menu = document.querySelector(".category-dropdown-menu");
+  if (!btn || !menu) return;
+  function close() {
+    menu.hidden = true;
+    btn.setAttribute("aria-expanded", "false");
+  }
+  btn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    var open = !menu.hidden;
+    menu.hidden = open;
+    btn.setAttribute("aria-expanded", String(!open));
+  });
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".category-dropdown")) close();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") close();
+  });
+})();

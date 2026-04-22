@@ -411,14 +411,69 @@ footer {
   min-width: 0;
 }
 
-.arrow {
-  font-size: 1.1rem;
-  opacity: 0;
-  transition: opacity 0.15s ease;
+/* On the homepage, let whitespace do the separating */
+.home .recipe-list li {
+  border-bottom: none;
 }
 
-.recipe-list a:hover .arrow {
-  opacity: 1;
+/* Side-by-side recents + featured on desktop */
+.home-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.home-lists h2 {
+  margin-top: 0;
+}
+
+/* ===== Category Tiles (homepage) ===== */
+.category-tiles {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.category-tiles li {
+  border-bottom: none;
+}
+
+.category-tiles a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  color: var(--text);
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.category-tiles a:hover {
+  text-decoration: none;
+  background: var(--note-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.category-tile-name {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: lowercase;
+}
+
+.category-tile-count {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.category-tiles a:hover .category-tile-count {
+  color: var(--accent);
 }
 
 /* ===== Recipe Page ===== */
@@ -448,38 +503,40 @@ footer {
   line-height: 1.6;
 }
 
-/* Meta Bar */
+/* Meta Bar — flat inline row with bottom rule */
 .recipe-meta {
   display: flex;
-  border: 1px solid var(--border-light);
-  border-radius: 6px;
-  background: var(--card-bg);
-  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  padding: 0 0 0.85rem 0;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .meta-item {
-  flex: 1;
-  text-align: center;
-  padding: 1rem 0.5rem;
-}
-
-.meta-item + .meta-item {
-  border-left: 1px solid var(--border-light);
+  flex: 0 0 auto;
+  text-align: left;
+  padding: 0;
 }
 
 .meta-label {
-  display: block;
+  display: inline;
   font-family: 'Sora', sans-serif;
   font-size: 0.7rem;
   font-weight: 600;
   text-transform: lowercase;
   letter-spacing: 0.08em;
   color: var(--text-light);
-  margin-bottom: 0.25rem;
+}
+
+.meta-label::after {
+  content: ":";
+  margin-right: 0.3em;
 }
 
 .meta-value {
-  font-size: 1rem;
+  display: inline;
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
@@ -656,23 +713,6 @@ footer {
       font-size: 1.6rem;
   }
 
-  .recipe-meta {
-      flex-wrap: wrap;
-  }
-
-  .meta-item {
-      flex: 1 1 50%;
-  }
-
-  .meta-item:nth-child(1),
-  .meta-item:nth-child(2) {
-      border-bottom: 1px solid var(--border-light);
-  }
-
-  .meta-item:nth-child(2n+1) {
-      border-left: none;
-  }
-
   .equipment,
   .ingredients {
       padding: 1.25rem 1.25rem;
@@ -692,5 +732,177 @@ footer {
 
   .search-results {
       width: 280px;
+  }
+
+  .category-tiles {
+      grid-template-columns: 1fr;
+  }
+
+  .home-lists {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Print ===== */
+@media print {
+  @page {
+    margin: 0.6in;
+  }
+
+  :root {
+    --bg: #fff;
+    --card-bg: #fff;
+    --note-bg: #fff;
+    --border: #000;
+    --border-light: #ccc;
+    --text: #000;
+    --text-light: #333;
+    --accent: #000;
+  }
+
+  html, body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* Subtle attribution + tagline at the top of every printed sheet */
+  body::before {
+    content: "the whole clove — no life stories. just recipes.";
+    display: block;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: lowercase;
+    color: #666;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Hide on-screen chrome */
+  header,
+  footer,
+  .search-wrapper,
+  .category-dropdown,
+  .more-link,
+  script,
+  noscript {
+    display: none !important;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Grid layouts stack linearly on paper */
+  .home-lists,
+  .category-tiles {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Flatten cards — ink-friendly, no boxes */
+  .equipment,
+  .ingredients,
+  .notes,
+  .instructions {
+    background: #fff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Notes keep a subtle left rule so they still read as asides */
+  .notes {
+    border-left: 2px solid #ccc !important;
+    padding: 0.25rem 0 0.25rem 0.75rem !important;
+  }
+
+  /* Compact meta bar — inline "Prep: 10 min  Cook: 20 min" */
+  .recipe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.2rem;
+    background: #fff !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    border-radius: 0 !important;
+    padding: 0 0 0.4rem 0 !important;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .meta-item {
+    flex: 0 0 auto;
+    text-align: left;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .meta-item + .meta-item {
+    border-left: none !important;
+  }
+
+  .meta-label {
+    display: inline;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+  }
+
+  .meta-label::after {
+    content: ":";
+  }
+
+  .meta-value {
+    display: inline;
+    font-weight: 600;
+    margin-left: 0.3em;
+  }
+
+  /* Recipe title tightened for print */
+  .recipe-header h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .recipe-category {
+    font-size: 0.7rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* Links lose their color/underline on paper */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /* Keep sections intact across pages where possible */
+  section,
+  .recipe-header,
+  .recipe-meta {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Step numbers stay visible and ink-black */
+  .instructions li::before {
+    color: #000;
+  }
+
+  /* Muted dividers between directions */
+  .instructions li {
+    border-bottom: 1px solid #eee !important;
+  }
+
+  .instructions li:last-child {
+    border-bottom: none !important;
   }
 }
