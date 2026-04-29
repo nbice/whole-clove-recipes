@@ -258,6 +258,38 @@ footer {
   font-weight: 300;
 }
 
+/* ===== 404 ===== */
+.not-found {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+
+.not-found h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  letter-spacing: 0.05em;
+}
+
+.not-found p {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.not-found-links {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.not-found-links a {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
+
 /* ===== Recipe Index ===== */
 .recipe-index h1 {
   font-size: 2rem;

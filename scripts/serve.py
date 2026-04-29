@@ -24,6 +24,22 @@ class CleanURLHandler(http.server.SimpleHTTPRequestHandler):
             self.path += ".html"
         return super().send_head()
 
+    def send_error(self, code, message=None, explain=None):
+        # Mirror GitHub Pages: serve the styled 404.html body for any 404.
+        if code == 404:
+            page = os.path.join(self.directory, "404.html")
+            if os.path.isfile(page):
+                with open(page, "rb") as f:
+                    body = f.read()
+                self.send_response(404, message)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.send_header("Content-Length", str(len(body)))
+                self.end_headers()
+                if self.command != "HEAD":
+                    self.wfile.write(body)
+                return
+        super().send_error(code, message, explain)
+
 
 if __name__ == "__main__":
     handler = functools.partial(CleanURLHandler, directory=ROOT)

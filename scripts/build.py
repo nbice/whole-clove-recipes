@@ -470,6 +470,20 @@ def build_home(template, recipes, search_json="[]"):
     return build_page(template, "The Whole Clove", html, SITE_TAGLINE, page_url("index.html"), search_json)
 
 
+def build_404(template, search_json="[]"):
+    html = '<div class="not-found">\n'
+    html += '    <h1>404</h1>\n'
+    html += "    <p>this page doesn't exist.</p>\n"
+    html += '    <p class="not-found-links"><a href="/">home</a> &middot; <a href="/recipes">all recipes</a></p>\n'
+    html += '</div>\n'
+    page = build_page(template, "404", html, "Page not found.", page_url("404.html"), search_json)
+    # GitHub Pages serves this for any missing URL while keeping the original path
+    # in the address bar, so relative asset paths would resolve against that path.
+    page = page.replace('href="static/', 'href="/static/')
+    page = page.replace('src="static/', 'src="/static/')
+    return page
+
+
 def build_sitemap(recipes, categories):
     """Generate sitemap.xml listing every page with a lastmod hint."""
     today = datetime.date.today().isoformat()
@@ -668,6 +682,8 @@ def main():
         f.write(build_index(template, recipes, search_json))
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w") as f:
         f.write(build_home(template, recipes, search_json))
+    with open(os.path.join(OUTPUT_DIR, "404.html"), "w") as f:
+        f.write(build_404(template, search_json))
 
     # Copy static assets
     if os.path.exists(STATIC_DIR):
