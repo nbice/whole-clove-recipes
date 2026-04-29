@@ -1,0 +1,57 @@
+{
+    "title": "lowercase recipe name",
+    "description": "use the grouped form for multi-component recipes (e.g. cookies + frosting + ganache)",
+    "category": "desserts",
+    "tags": "comma, separated, keywords",
+    "prep_time": "20 minutes",
+    "cook_time": "10 minutes",
+    "inactive_time": "1 hour",
+    "total_time": "1 hour 30 minutes",
+    "yields": "12 cookies",
+    "equipment": [
+        "Stand mixer",
+        "Cookie sheet"
+    ],
+    "ingredients": [
+        {
+            "group": "cookies",
+            "items": [
+                {"qty": 150, "unit": "g", "item": "all purpose flour"},
+                {"qty": 100, "unit": "g", "item": "sugar"}
+            ]
+        },
+        {
+            "group": "frosting",
+            "items": [
+                {"qty": 113, "unit": "g", "item": "butter", "prep": "room temperature"},
+                {"qty": 125, "unit": "g", "item": "powdered sugar"}
+            ]
+        }
+    ],
+    "amount_variations": ["2x"],
+    "directions": [
+        {
+            "group": "cookies",
+            "directions": [
+                {
+                    "step": "Step ingredient indices refer to ingredients in the SAME-NAMED group only.",
+                    "ingredients": [0, 1]
+                },
+                "Bake at 350°F for 10 minutes."
+            ]
+        },
+        {
+            "group": "frosting",
+            "directions": [
+                {
+                    "step": "Cream butter and powdered sugar together.",
+                    "ingredients": [0, 1]
+                }
+            ]
+        }
+    ],
+    "notes": [
+        "Direction group names must match ingredient group names so step refs resolve correctly."
+    ],
+    "created_at": "YYYY-MM-DD"
+}

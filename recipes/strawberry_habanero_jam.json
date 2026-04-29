@@ -1,0 +1,62 @@
+{
+  "title": "strawberry habanero jam",
+  "description": "",
+  "category": "preserves",
+  "tags": "jam, strawberry, habanero, spicy",
+  "yields": "8 small jars",
+  "equipment": [
+    "blender",
+    "pot",
+    "4oz canning jars",
+    "water bath canner"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "unit": "lb",
+      "item": "fresh strawberries",
+      "prep": "hulled"
+    },
+    {
+      "qty": 7,
+      "item": "habanero peppers",
+      "prep": "stems removed"
+    },
+    {
+      "qty": 25,
+      "unit": "g",
+      "item": "low sugar pectin"
+    },
+    {
+      "qty": 2,
+      "unit": "C",
+      "item": "white sugar"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "lemon juice"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Crush the strawberries with a potato masher or use a stick blender to blitz a few times until crushed.",
+      "ingredients": [0]
+    },
+    {
+      "step": "Take 1/4 of the crushed strawberries and blend with the habanero peppers in a separate container until smooth.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "Combine the remaining crushed strawberries, the strawberry/pepper puree, pectin, 1/4 cup of the sugar, and the lemon juice in a pot. Bring to a full rolling boil that cannot be stirred down, stirring constantly.",
+      "ingredients": [2, {"index": 3, "qty": "1/4", "unit": "C"}, 4]
+    },
+    {
+      "step": "Add the remaining sugar, stirring to dissolve. Return to a full boil and boil for exactly 1 minute.",
+      "ingredients": [{"index": 3, "qty": "1 3/4", "unit": "C"}]
+    },
+    "Remove the jam from the heat and skim off any foam.",
+    "Evenly divide the jam into 8 prepared 4oz canning jars, leaving 1/4\" of headspace. If you have a little extra, simply store in the fridge in a separate container. Process the jars in a hot water bath for 10 minutes if canning."
+  ],
+  "created_at": "2026-04-29"
+}

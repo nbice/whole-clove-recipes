@@ -1,0 +1,69 @@
+{
+  "title": "chipotle sauce",
+  "description": "",
+  "category": "sauces",
+  "tags": "sauce, chipotle, smoky, spicy",
+  "equipment": [
+    "sheet tray",
+    "blender",
+    "blowtorch (optional)"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "item": "can chipotles"
+    },
+    {
+      "qty": "1/2",
+      "item": "onion"
+    },
+    {
+      "qty": 3,
+      "item": "garlic cloves"
+    },
+    {
+      "qty": 1,
+      "item": "lime",
+      "prep": "juice of"
+    },
+    {
+      "qty": 2,
+      "item": "red bell peppers"
+    },
+    {
+      "qty": 2,
+      "item": "Roma tomatoes"
+    },
+    {
+      "qty": 1,
+      "unit": "g",
+      "item": "black pepper"
+    },
+    {
+      "qty": 3,
+      "unit": "g",
+      "item": "smoked paprika"
+    },
+    {
+      "item": "salt",
+      "prep": "to taste"
+    },
+    {
+      "qty": "1/4",
+      "unit": "C",
+      "item": "olive oil"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Set the red bell peppers and tomatoes on a sheet tray and broil on high, flipping every few minutes, until charred on the outside. Finish with a blowtorch if you have one. The tomatoes will likely finish before the peppers. Place the tomatoes and peppers in separate metal bowls and cover with plastic wrap.",
+      "ingredients": [4, 5]
+    },
+    "After 10 minutes, uncover the tomatoes and remove the skins. Cut in half and remove the core. Do the same to the bell peppers.",
+    {
+      "step": "Add all ingredients except for the oil to a blender. Blend until smooth. While blending, slowly stream in the oil to emulsify. Stop adding the oil once emulsified and blend for 10 more seconds. Transfer to a container and store in the fridge.",
+      "ingredients": [0, 1, 2, 3, 6, 7, 8, 9]
+    }
+  ],
+  "created_at": "2026-04-29"
+}

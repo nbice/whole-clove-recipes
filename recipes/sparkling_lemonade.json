@@ -1,0 +1,63 @@
+{
+  "title": "sparkling lemonade",
+  "description": "fermented with ginger bug",
+  "category": "beverages",
+  "tags": "lemon, fermented",
+  "cook_time": "15 minutes",
+  "inactive_time": "2 - 5 days",
+  "yields": "1 liter",
+  "equipment": [
+    "medium pot",
+    "colander",
+    "funnel",
+    "glass flip-top bottle"
+  ],
+  "ingredients": [
+    {
+      "qty": 250,
+      "unit": "ml",
+      "item": "Santa Cruz lemon juice"
+    },
+    {
+      "qty": 6,
+      "item": "lemons"
+    },
+    {
+      "qty": 600,
+      "unit": "ml",
+      "item": "water"
+    },
+    {
+      "qty": 200,
+      "unit": "g",
+      "item": "white sugar"
+    },
+    {
+      "qty": 60,
+      "unit": "ml",
+      "item": "ginger bug",
+      "prep": "active"
+    }
+  ],
+  "directions": [
+    {
+      "step": "Wash and roll the lemons with your hands. Slice the ends off, then cut in half. Juice the lemons and set the juice aside. Add the lemon pieces, including the ends, to a medium pot.",
+      "ingredients": [1]
+    },
+    {
+      "step": "Add the water and Santa Cruz lemon juice to the pot. Set over high heat and bring to a boil, then reduce to a simmer. Let simmer for 5 minutes.",
+      "ingredients": [0, 2]
+    },
+    {
+      "step": "Strain the solids through a colander, pressing the liquid from the lemons. Optionally, pass the liquid through a fine mesh strainer or cheesecloth. Add the sugar to the liquid and stir to dissolve. Let cool completely.",
+      "ingredients": [3]
+    },
+    {
+      "step": "Add the ginger bug and stir to combine. Use a funnel to transfer the liquid to a flip-top bottle. Leave at least 1\" of headspace.",
+      "ingredients": [4]
+    },
+    "Set the bottle on the countertop at room temperature. Allow the drink to ferment until your desired level of carbonation is reached (2 - 5 days). Burp once a day to avoid spillover.",
+    "Store in the fridge once the drink is fermented and to your liking. No need to continue burping. Best served cold."
+  ],
+  "created_at": "2026-04-29"
+}
