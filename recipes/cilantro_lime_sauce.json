@@ -3,6 +3,10 @@
   "description": "",
   "category": "sauces",
   "tags": "sauce, cilantro, lime, spicy",
+  "equipment": [
+    "blender",
+    "blowtorch (optional)"
+  ],
   "ingredients": [
     {
       "qty": 6,

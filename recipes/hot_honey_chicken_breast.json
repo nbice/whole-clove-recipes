@@ -4,6 +4,9 @@
   "category": "mains",
   "tags": "chicken, spicy, honey",
   "prep_time": "1 hour",
+  "equipment": [
+    "meat thermometer"
+  ],
   "ingredients": [
     {
       "group": "hot honey sauce",

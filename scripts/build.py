@@ -242,7 +242,8 @@ def render_recipe(r):
         html += '        </section>\n'
 
     html += '    </div>\n'
-    html += '</article>'
+    html += '</article>\n'
+    html += '<script src="static/wakelock.js" defer></script>'
     return html
 
 

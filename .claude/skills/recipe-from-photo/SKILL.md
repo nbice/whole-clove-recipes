@@ -34,6 +34,7 @@ The user provides one or more images (file paths, dropped attachments, or screen
 - **number ranges**: use a tight hyphen with no surrounding spaces — `2-5 minutes`, `15-18 minutes`, `2-5 days`. Never `2 - 5 minutes`.
 - **`description`**: only fill in if the photo has a tagline; otherwise leave as `""`.
 - **`notes`**: only include notes actually written on the photo.
+- **ingredient order**: list ingredients in the order they're first used in the directions. Photos are often written out of order (e.g. spices grouped together, liquids at the bottom) — don't blindly preserve the photo's order. Reorder so a reader scanning the ingredient list reads it top-to-bottom in the same sequence the recipe uses each item. If the photo's order differs meaningfully from the use order, mention the reorder in your proofread reply so the user can confirm.
 - **`amount_variations`**: leave as-is from the template or omit; this field is reserved for future use.
 
 ## Step ingredient refs

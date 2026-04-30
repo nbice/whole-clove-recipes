@@ -3,6 +3,9 @@
   "description": "",
   "category": "mains",
   "tags": "pork, rice, asian",
+  "equipment": [
+    "wok"
+  ],
   "ingredients": [
     {
       "qty": 2,

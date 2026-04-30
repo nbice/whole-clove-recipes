@@ -3,6 +3,9 @@
   "description": "",
   "category": "soups",
   "tags": "soup, peppers, spicy",
+  "equipment": [
+    "immersion blender"
+  ],
   "ingredients": [
     {
       "qty": 1,

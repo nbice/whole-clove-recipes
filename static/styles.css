@@ -667,7 +667,7 @@ footer {
 .instructions li {
   counter-increment: steps;
   padding: 1rem 0;
-  padding-left: 1rem;
+  padding-left: 2rem;
   position: relative;
   border-bottom: 1px solid var(--border-light);
 }
@@ -752,10 +752,6 @@ footer {
 
   .notes {
       padding: 1.25rem;
-  }
-
-  .instructions li {
-      padding-left: 2rem;
   }
 
   .search-input {

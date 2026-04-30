@@ -3,6 +3,11 @@
   "description": "",
   "category": "preserves",
   "tags": "jam, peppers, spicy",
+  "equipment": [
+    "food processor",
+    "canning jars",
+    "water bath canner"
+  ],
   "ingredients": [
     {
       "qty": 1,
