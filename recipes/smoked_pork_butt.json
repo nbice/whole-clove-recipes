@@ -1,0 +1,84 @@
+{
+  "title": "smoked pork butt",
+  "description": "",
+  "category": "mains",
+  "tags": "barbecue, pork",
+  "equipment": [
+    "electric smoker",
+    "apple or cherry wood chips"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "item": "bone-in pork shoulder"
+    },
+    {
+      "qty": 65,
+      "unit": "g",
+      "item": "coarse sea salt"
+    },
+    {
+      "qty": 6,
+      "unit": "T",
+      "item": "garlic powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "chipotle powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "smoked paprika"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "chili powder"
+    },
+    {
+      "qty": "1/2",
+      "unit": "T",
+      "item": "cumin"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "cinnamon powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "black pepper"
+    },
+    {
+      "qty": 113,
+      "unit": "g",
+      "item": "butter"
+    }
+  ],
+  "directions": [
+    {
+      "step": "The night before smoking, clean the pork butt and pat dry. Trim the fat cap, if necessary, down to 1/4\". Keep the trimmed fat and cut into small pieces. Cook the fat in a small saucepan over low heat on the stovetop (or the smoker) until fully rendered. Score the fat cap with a knife in a crosshatch pattern. Cover the pork butt all over with coarse sea salt then place on a wire rack over a sheet tray. Place in the fridge overnight.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "The next day, preheat smoker to 225°F. Whisk together all of the spices in a bowl to make the rub. Take pork out of the fridge and season generously with rub. It's best to pat or press the rub into the meat before gently rubbing around for complete coverage. Place the pork on the smoker fat side up and add apple or cherry wood chips.",
+      "ingredients": [2, 3, 4, 5, 6, 7, 8]
+    },
+    {
+      "step": "Add wood chips as needed, every 30-45 minutes. Two hours in, add half the butter to the top of the pork.",
+      "ingredients": [{"index": 9, "qty": 56.5, "unit": "g"}]
+    },
+    "Keep smoking until a dark brown and black crust has formed on the outside of the pork (usually around 165°F internal temp). Spray with water every 60 minutes to help develop the crust.",
+    {
+      "step": "Once the bark has formed, you can wrap the pork tightly in butcher paper or heavy duty aluminum foil. Add the rest of your butter or the rendered pork fat from step 1.",
+      "ingredients": [{"index": 9, "qty": 56.5, "unit": "g"}]
+    },
+    "Place the wrapped pork back on the smoker (or in the oven, there is no need to add more smoke at this stage). You can also raise the temperature to 275°F to shorten the cook time.",
+    "Once the pork reaches an internal temp of 200°F, pull it off the smoker and let it rest for at least 1 hour.",
+    "When ready to eat, chop pork or shred with hands and serve."
+  ],
+  "created_at": "2026-06-04"
+}
