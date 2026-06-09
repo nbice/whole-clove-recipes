@@ -31,6 +31,8 @@ The user provides one or more images (file paths, dropped attachments, or screen
 - **`created_at`**: today's date in `YYYY-MM-DD` format.
 - **time fields**: format as `"10 minutes"`, `"2 hours"`, `"1 hour 30 minutes"` — they're parsed to ISO 8601 for JSON-LD. Leave empty if the photo doesn't list timing; don't guess.
 - **ingredient `qty`**: a number when possible (`1`, `2.5`); a string for fractions (`"1/2"`, `"3/4"`). `unit` should be short: `C`, `t`, `T`, `g`, `oz`, `lbs`, `ml`. Omit `unit` for countable items (eggs, onions).
+- **step ingredient refs formatting**: in `directions` steps, the `ingredients` array is just a list of indices, so write it on a single line, e.g. `"ingredients": [0, 1, 2]`. (The top-level `ingredients` objects may stay multi-line.)
+- **`equipment`**: lowercase each item (e.g. `"dutch oven"`, not `"Dutch oven"`).
 - **number ranges**: use a tight hyphen with no surrounding spaces — `2-5 minutes`, `15-18 minutes`, `2-5 days`. Never `2 - 5 minutes`.
 - **`description`**: only fill in if the photo has a tagline; otherwise leave as `""`.
 - **`notes`**: only include notes actually written on the photo.

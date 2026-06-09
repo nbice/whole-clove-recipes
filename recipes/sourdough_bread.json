@@ -1,0 +1,60 @@
+{
+  "title": "sourdough bread",
+  "description": "",
+  "category": "sides",
+  "tags": "bread, sourdough, baking",
+  "cook_time": "50 minutes",
+  "inactive_time": "9 hours",
+  "total_time": "10 hours",
+  "equipment": [
+    "banneton",
+    "dutch oven",
+    "parchment paper",
+    "sharp knife or lame",
+    "cooling rack"
+  ],
+  "ingredients": [
+    {
+      "qty": 100,
+      "unit": "g",
+      "item": "sourdough starter",
+      "prep": "active"
+    },
+    {
+      "qty": 365,
+      "unit": "g",
+      "item": "water"
+    },
+    {
+      "qty": 10,
+      "unit": "g",
+      "item": "fine sea salt"
+    },
+    {
+      "qty": 375,
+      "unit": "g",
+      "item": "bread flour"
+    },
+    {
+      "qty": 125,
+      "unit": "g",
+      "item": "whole wheat or rye flour"
+    }
+  ],
+  "directions": [
+    {
+      "step": "In a large bowl mix together the starter and water. Add the salt and mix again. Add your flours and mix by hand until a shaggy ball is formed and no dry spots remain. Cover and rest for 20 minutes.",
+      "ingredients": [0, 1, 2, 3, 4]
+    },
+    "Stretch and fold the dough by pulling up an edge of the dough and stretching it as far as you can without tearing. Fold the dough back onto itself. Turn the bowl 90° and repeat 3 more times. Turn the dough over in the bowl and cover. Rest 30 minutes and repeat the stretch and folds. Cover and let rest in a warm location (75-80°F).",
+    "Let the dough rise for at least 7 more hours, or until doubled in size and air bubbles are visible. Once doubled in size, the dough can be shaped.",
+    "To shape a batard, dump the dough onto a floured countertop. Stretch the dough out into a rectangle, short side closest to you. Take the bottom left corner, pull and stretch it out, and fold it into the bottom middle of the dough. Repeat with the bottom right corner. Stretch the middle of the top part of the dough and fold it into the middle. Starting from the top, stitch the dough together and work your way down. Roll the dough up from the bottom and pull the dough towards yourself on the counter to create tension. Fold in the ends, pick up the dough, and place it into a floured banneton.",
+    "Refrigerate the dough for at least an hour and up to 2 days. You can leave it uncovered.",
+    "Once ready to bake, preheat a dutch oven in the oven at 500°F for an hour. Once preheated, take the dough out and flip the banneton onto a sheet of parchment paper. Make a single cut along the top of the dough lengthwise using a sharp knife or lame. Carefully transfer the parchment and dough to the dutch oven. Optionally place 4 ice cubes in the dutch oven under the parchment. Cover and bake for 20 minutes.",
+    "Remove the lid and lower the heat to 450°F. Bake for an additional 30 minutes. Remove the bread from the dutch oven, place it on a cooling rack, and cool for 1 hour."
+  ],
+  "notes": [
+    "For a smaller loaf use the following quantities: 80g sourdough starter, 292g water, 8g fine sea salt, 300g bread flour, 100g whole wheat or rye flour"
+  ],
+  "created_at": "2026-06-09"
+}
