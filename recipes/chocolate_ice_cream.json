@@ -1,0 +1,81 @@
+{
+  "title": "chocolate ice cream",
+  "description": "",
+  "category": "desserts",
+  "tags": "chocolate, icecream",
+  "prep_time": "10 minutes",
+  "cook_time": "20 minutes",
+  "inactive_time": "16 hours",
+  "total_time": "",
+  "yields": "1.5 quarts of ice cream",
+  "equipment": [
+    "ice cream maker"
+  ],
+  "ingredients": [
+    {
+      "qty": 4,
+      "item": "egg yolks"
+    },
+    {
+      "qty": 150,
+      "unit": "g",
+      "item": "white sugar"
+    },
+    {
+      "qty": 250,
+      "unit": "g",
+      "item": "whole milk"
+    },
+    {
+      "qty": 500,
+      "unit": "g",
+      "item": "heavy cream",
+      "prep": "divided"
+    },
+    {
+      "qty": 8,
+      "unit": "oz",
+      "item": "baking chocolate",
+      "prep": "roughly chopped"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "vanilla extract"
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [
+    {
+      "step": "Add egg yolks and sugar to a bowl and whisk until light and creamy.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "Add half of the cream to a metal bowl placed over a larger bowl filled with ice.",
+      "ingredients": [{"index": 3, "qty": 250, "unit": "g"}]
+    },
+    {
+      "step": "In a medium saucepan over medium heat add the rest of the cream. Heat until simmering and then pour the hot cream into a metal or heat-safe glass bowl with the chopped chocolate. Let sit for a few minutes then whisk together until smooth.",
+      "ingredients": [{"index": 3, "qty": 250, "unit": "g"}, 4]
+    },
+    {
+      "step": "Heat the milk in a medium saucepan over medium heat just until it starts to steam. Slowly add half of the milk to the egg yolk mixture while constantly whisking.",
+      "ingredients": [2]
+    },
+    "Add the egg and milk mixture to the saucepan and continue to heat over med-low heat, stirring constantly, for 2-5 minutes or until the custard can coat the back of a spoon and running your finger across the spoon leaves a distinct line.",
+    {
+      "step": "Add the custard and ganache to the cold cream through a fine mesh strainer and whisk constantly to cool. Once cooled to room temperature add the vanilla extract and whisk again to combine.",
+      "ingredients": [5]
+    },
+    "Cover the bowl with plastic wrap making sure the wrap makes contact with the custard. This is to prevent a film from forming during the chilling process. Transfer to the fridge and chill for at least 4 hours or overnight.",
+    "Prepare your ice cream maker according to the manufacturer's instructions. Add the custard to the ice cream maker and churn until a soft serve consistency is reached, 20-40 minutes. Transfer to your desired container and freeze for at least 12 hours."
+  ],
+  "notes": [
+    "The frozen custard can be placed in any type of container but I recommend using a glass bread pan or baking dish and freezing the glass before churning the custard. This will prevent the custard from melting after it's been transferred to the container.",
+    "The best way to thaw ice cream is to transfer from the freezer to the fridge 20-30 minutes before serving. Thawing at room temperature is fine but the outside of the ice cream will be softer than the center."
+  ],
+  "created_at": "2026-06-11"
+}

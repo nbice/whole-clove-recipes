@@ -162,7 +162,7 @@ def render_recipe(r):
 
     # Meta bar
     html += '    <div class="recipe-meta">\n'
-    for label, key in [("Prep", "prep_time"), ("Cook", "cook_time"), ("Inactive", "inactive_time"), ("Total", "total_time"), ("Serves", "serves")]:
+    for label, key in [("Prep", "prep_time"), ("Cook", "cook_time"), ("Inactive", "inactive_time"), ("Total", "total_time"), ("Yields", "yields")]:
         value = r.get(key, "")
         if not value:
             continue

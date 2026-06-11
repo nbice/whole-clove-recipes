@@ -1,0 +1,69 @@
+{
+  "title": "shrimp and grits",
+  "description": "",
+  "category": "mains",
+  "tags": "shrimp, grits, cajun, seafood",
+  "equipment": [
+    "stock pot",
+    "skillet"
+  ],
+  "ingredients": [
+    {
+      "group": "grits",
+      "items": [
+        {"qty": 2, "unit": "C", "item": "chicken broth"},
+        {"qty": 1, "unit": "C", "item": "stone ground grits"},
+        {"qty": 2, "unit": "C", "item": "whole milk"},
+        {"qty": 1, "unit": "C", "item": "cheddar cheese"},
+        {"qty": 2, "unit": "T", "item": "butter"},
+        {"qty": 2, "unit": "T", "item": "heavy cream"},
+        {"item": "salt", "prep": "to taste"}
+      ]
+    },
+    {
+      "group": "shrimp",
+      "items": [
+        {"qty": 12, "unit": "oz", "item": "shrimp"},
+        {"qty": 1, "unit": "T", "item": "olive oil"},
+        {"qty": 6, "unit": "oz", "item": "andouille sausage"},
+        {"qty": 4, "item": "thick-cut bacon strips"},
+        {"qty": "1/2", "item": "onion", "prep": "chopped"},
+        {"qty": 2, "item": "garlic cloves"},
+        {"qty": 1, "unit": "t", "item": "cajun seasoning"},
+        {"qty": "1/2", "unit": "t", "item": "smoked paprika"},
+        {"qty": "1/4", "unit": "C", "item": "white wine"},
+        {"qty": "1/2", "unit": "C", "item": "chicken broth"},
+        {"qty": 1, "unit": "t", "item": "Worcestershire sauce"},
+        {"qty": "1/2", "item": "lemon", "prep": "juice of"},
+        {"qty": 2, "unit": "T", "item": "butter"},
+        {"item": "salt", "prep": "to taste"},
+        {"item": "pepper", "prep": "to taste"},
+        {"qty": 2, "unit": "T", "item": "hot sauce"}
+      ]
+    }
+  ],
+  "directions": [
+    {
+      "group": "grits",
+      "directions": [
+        {
+          "step": "Boil the chicken broth in a stock pot. Add the grits and then the milk, and whisk to combine. Reduce heat to a simmer and simmer for 30 minutes.",
+          "ingredients": [0, 1, 2]
+        },
+        {
+          "step": "Add the cheese, butter, cream, and salt. Stir to combine.",
+          "ingredients": [3, 4, 5, 6]
+        }
+      ]
+    },
+    {
+      "group": "shrimp",
+      "directions": []
+    }
+  ],
+  "notes": [
+    "Use more cajun seasoning (up to 3 t) for more heat.",
+    "DRAFT: shrimp directions still need to be added."
+  ],
+  "created_at": "2026-06-09"
+}
