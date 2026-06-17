@@ -1,0 +1,255 @@
+{
+  "title": "mocha brownie batter ice cream",
+  "description": "brownie batter, espresso, and almonds",
+  "category": "desserts",
+  "tags": "ice cream, chocolate, espresso, brownie, almonds",
+  "prep_time": "",
+  "cook_time": "",
+  "inactive_time": "",
+  "total_time": "",
+  "yields": "",
+  "equipment": [
+    "ice cream maker",
+    "stand mixer (optional)"
+  ],
+  "ingredients": [
+    {
+      "group": "ice cream base",
+      "items": [
+        {
+          "qty": 100,
+          "unit": "g",
+          "item": "white sugar"
+        },
+        {
+          "qty": 2,
+          "unit": "T",
+          "item": "nonfat dry milk powder"
+        },
+        {
+          "qty": "1/2",
+          "unit": "t",
+          "item": "xanthan gum"
+        },
+        {
+          "qty": 315,
+          "unit": "ml",
+          "item": "whole milk"
+        },
+        {
+          "qty": 2,
+          "unit": "T",
+          "item": "light corn syrup"
+        },
+        {
+          "qty": 315,
+          "unit": "ml",
+          "item": "heavy cream",
+          "prep": "cold"
+        }
+      ]
+    },
+    {
+      "group": "espresso syrup",
+      "items": [
+        {
+          "qty": 30,
+          "unit": "ml",
+          "item": "heavy cream",
+          "prep": "cold"
+        },
+        {
+          "qty": 2,
+          "unit": "double shots",
+          "item": "espresso",
+          "prep": "freshly pulled"
+        },
+        {
+          "qty": 44,
+          "unit": "g",
+          "item": "white sugar"
+        }
+      ]
+    },
+    {
+      "group": "chocolate mom",
+      "items": [
+        {
+          "qty": 28,
+          "unit": "g",
+          "item": "cocoa powder"
+        },
+        {
+          "qty": 50,
+          "unit": "g",
+          "item": "white sugar"
+        },
+        {
+          "qty": 60,
+          "unit": "ml",
+          "item": "water"
+        }
+      ]
+    },
+    {
+      "group": "brownie batter",
+      "items": [
+        {
+          "qty": 75,
+          "unit": "g",
+          "item": "unsalted butter",
+          "prep": "melted"
+        },
+        {
+          "qty": 100,
+          "unit": "g",
+          "item": "white sugar"
+        },
+        {
+          "qty": 105,
+          "unit": "g",
+          "item": "brown sugar"
+        },
+        {
+          "qty": 1,
+          "unit": "t",
+          "item": "vanilla extract"
+        },
+        {
+          "qty": 125,
+          "unit": "g",
+          "item": "all purpose flour"
+        },
+        {
+          "qty": 50,
+          "unit": "g",
+          "item": "cocoa powder"
+        },
+        {
+          "qty": "1/4",
+          "unit": "t",
+          "item": "salt"
+        },
+        {
+          "qty": "2 - 4",
+          "unit": "T",
+          "item": "whole milk"
+        }
+      ]
+    },
+    {
+      "group": "brownie batter ice cream",
+      "items": [
+        {
+          "qty": 1,
+          "item": "ice cream base"
+        },
+        {
+          "qty": 1,
+          "item": "espresso syrup"
+        },
+        {
+          "qty": 1,
+          "item": "chocolate mom"
+        },
+        {
+          "qty": "1/2",
+          "unit": "t",
+          "item": "salt"
+        },
+        {
+          "qty": 75,
+          "unit": "g",
+          "item": "roasted almonds"
+        },
+        {
+          "qty": 1,
+          "item": "brownie batter"
+        }
+      ]
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [
+    {
+      "group": "ice cream base",
+      "directions": [
+        {
+          "step": "In a small bowl, whisk together the sugar, milk powder, and xanthan gum.",
+          "ingredients": [0, 1, 2]
+        },
+        {
+          "step": "In a medium sauce pot over medium heat, combine the milk and corn syrup. Add the sugar mixture and whisk together until combined. Stir often until the sugar is fully dissolved, 2 - 3 minutes.",
+          "ingredients": [3, 4]
+        },
+        {
+          "step": "Remove the pot from the heat and add the cold cream, then stir to combine.",
+          "ingredients": [5]
+        },
+        "Transfer the liquid to a 1 quart sized deli container and store in the fridge for at least 6 hours."
+      ]
+    },
+    {
+      "group": "espresso syrup",
+      "directions": [
+        {
+          "step": "Add all ingredients to a 1 cup sized deli container and whisk together until the sugar is fully dissolved. Let the syrup cool to room temperature before covering and transferring to the fridge until ready to use.",
+          "ingredients": [0, 1, 2]
+        }
+      ]
+    },
+    {
+      "group": "chocolate mom",
+      "directions": [
+        {
+          "step": "Add all ingredients to a small sauce pot set over medium heat and whisk together. Stir constantly until there are no more clumps and the mixture looks glossy, 2 - 3 minutes.",
+          "ingredients": [0, 1, 2]
+        },
+        "Remove the pot from the heat and allow to cool to room temperature.",
+        "Transfer the mixture to a 1 cup sized deli container, cover, and store in the fridge until ready to use."
+      ]
+    },
+    {
+      "group": "brownie batter",
+      "directions": [
+        {
+          "step": "In the bowl of a stand mixer with a whisk attachment, whisk together the melted butter and sugars on medium-high speed for 3 minutes. Add in the vanilla extract and whisk again to combine.",
+          "ingredients": [0, 1, 2, 3]
+        },
+        {
+          "step": "In a separate bowl, whisk together the flour, cocoa powder, and salt. Add the flour mixture to the stand mixer and mix on medium speed just until fully combined. Add the milk 1 tablespoon at a time until a thick but fudgy consistency is reached.",
+          "ingredients": [4, 5, 6, 7]
+        }
+      ]
+    },
+    {
+      "group": "brownie batter ice cream",
+      "directions": [
+        {
+          "step": "Microwave the chocolate mom for 30 seconds to make it runny. Then, in a large bowl, combine the ice cream base, chocolate mom, espresso syrup, and salt. Whisk until fully combined.",
+          "ingredients": [0, 1, 2, 3]
+        },
+        "Prepare your ice cream maker according to the manufacturer's instructions. Add the ice cream mixture and churn for 20 - 40 minutes until a soft serve consistency is reached.",
+        {
+          "step": "While the ice cream is churning, chop the roasted almonds into very small pieces.",
+          "ingredients": [4]
+        },
+        {
+          "step": "Once a soft serve consistency is reached, alternate between adding in small spoonfuls of the prepared brownie batter and small handfuls of the chopped almonds into the ice cream maker as it's churning. After half of the brownie batter and half of the almonds have been added, turn off the ice cream maker and dump the ice cream into your ice cream container. Add in the remaining almonds on top of the ice cream and the brownie batter in large spoonfuls. Use a spoon to mix in and break up the almonds and brownie batter.",
+          "ingredients": [5]
+        },
+        "Cover the ice cream with plastic wrap and transfer to the freezer for at least 12 hours."
+      ]
+    }
+  ],
+  "notes": [
+    "Adapted from Salt & Straw's ice cream base, chocolate mom, and coffee/espresso syrup.",
+    "The stand mixer is optional; a whisk works fine for the brownie batter.",
+    "The ice cream can be placed in any type of container but I recommend using a glass bread pan or baking dish and freezing the glass before churning. This will prevent the ice cream from melting after it's been transferred to the container.",
+    "The best way to thaw ice cream is to transfer it from the freezer to the fridge 20-30 minutes before serving. Thawing at room temperature is fine but the outside of the ice cream will be softer than the center."
+  ],
+  "created_at": "2026-06-15"
+}

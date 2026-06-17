@@ -2,22 +2,21 @@
   "title": "smoked ribs",
   "description": "oneliner",
   "category": "mains",
-  "tags": "barbecue",
-  "yields": "how much does the recipe make",
+  "yields": "",
+  "tags": "barbecue, pork",
   "equipment": [
-    "smoker"
+    "electric smoker",
+    "apple or cherry wood chips"
   ],
   "ingredients": [
     {
-      "qty": 120,
-      "unit": "g",
-      "item": "yeast",
-      "prep": "active"
+      "qty": 1,
+      "item": "baby back ribs"
     }
   ],
   "directions": [
     {
-      "step": "Steps can be objects like this with specific ingredients listed underneath",
+      "step": "Prepare the ribs three hours prior to smoking. Pat the ribs dry with a paper towel and remove the silver skin from the bottom side of the ribs...",
       "ingredients": [
         0
       ]
