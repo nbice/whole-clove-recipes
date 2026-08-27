@@ -9,26 +9,31 @@
   "equipment": [],
   "ingredients": [
     {
-      "qty": 1,
+      "qty": 2,
       "unit": "C",
       "item": "pecan halves"
     },
     {
-      "qty": 1,
+      "qty": 2,
       "unit": "T",
       "item": "unsalted butter",
       "prep": "melted"
     },
     {
-      "qty": "1/2",
+      "qty": 1,
       "unit": "t",
       "item": "salt"
     },
     {
-      "qty": "1",
+      "qty": 2,
       "unit": "t",
       "item": "cinnamon",
       "prep": "ground"
+    },
+    {
+      "qty": 2,
+      "unit": "t",
+      "item": "white sugar"
     }
   ],
   "amount_variations": [
@@ -37,8 +42,8 @@
   ],
   "directions": [
     {
-      "step": "Preheat oven to 350°F. In a large bowl, toss the pecans with the melted butter, salt, and cinnamon. Place on a parchment lined sheet tray and bake in the oven for 20 minutes or until slightly darker and aromatic, stirring halfway through.",
-      "ingredients": [0, 1, 2, 3]
+      "step": "Preheat oven to 350°F. In a large bowl, toss the pecans with the melted butter, salt, cinnamon, and sugar. Place on a parchment lined sheet tray and bake in the oven for 20 minutes or until slightly darker and aromatic, stirring halfway through.",
+      "ingredients": [0, 1, 2, 3, 4]
     },
     "Cool completely."
   ],
