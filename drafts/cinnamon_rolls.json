@@ -1,0 +1,107 @@
+{
+  "title": "cinnamon rolls",
+  "description": "with maple frosting and roasted pecans",
+  "category": "desserts",
+  "tags": "cinnamon rolls, breakfast, baking, nuts, bread, sweet",
+  "prep_time": "30 minutes",
+  "cook_time": "20-25 minutes",
+  "inactive_time": "3 hours",
+  "total_time": "4 hours",
+  "yields": "12 rolls",
+  "equipment": [
+    "rolling pin",
+    "9x13 baking dish",
+    "medium saucepan"
+  ],
+  "ingredients": [
+    {
+      "group": "rolls",
+      "items": [
+        {"qty": "2t + 2/3 C", "item": "white sugar", "prep": "divided"},
+        {"qty": 1, "unit": "C", "item": "warm water", "prep": "~95°F"},
+        {"qty": "2 1/4", "unit": "t", "item": "yeast"},
+        {"qty": 4, "item": "eggs"},
+        {"qty": "2/3", "unit": "C", "item": "butter", "prep": "melted"},
+        {"qty": 1, "unit": "t", "item": "salt"},
+        {"qty": 1, "unit": "C", "item": "mashed potatoes"},
+        {"qty": 6, "unit": "C", "item": "bread flour"}
+      ]
+    },
+    {
+      "group": "filling",
+      "items": [
+        {"qty": 1, "unit": "C", "item": "brown sugar"},
+        {"qty": 2, "unit": "T", "item": "cinnamon"},
+        {"qty": 6, "unit": "T", "item": "butter", "prep": "melted"},
+        {"item": "pecans", "prep": "roasted and chopped (amount TBD)"}
+      ]
+    },
+    {
+      "group": "icing",
+      "items": [
+        {"qty": "1/2", "unit": "C", "item": "unsalted butter"},
+        {"qty": 1, "unit": "C", "item": "brown sugar", "prep": "packed"},
+        {"qty": "1/4", "unit": "C", "item": "whole milk"},
+        {"qty": 2, "unit": "C", "item": "powdered sugar", "prep": "sifted"},
+        {"qty": 1, "unit": "T", "item": "maple extract"},
+        {"item": "pecans", "prep": "roasted and chopped (amount TBD)"}
+      ]
+    }
+  ],
+  "directions": [
+    {
+      "group": "rolls",
+      "directions": [
+        {
+          "step": "In a glass measuring cup add the warm water, 2t of the sugar, and the yeast. Let stand for 5 minutes until it forms bubbles.",
+          "ingredients": [1, {"index": 0, "qty": 2, "unit": "t"}, 2]
+        },
+        {
+          "step": "Add the eggs, melted butter, salt, mashed potatoes, remaining 2/3C sugar, and bread flour to a large bowl. Add the yeast mixture slowly and mix until well blended. Knead for 5 minutes.",
+          "ingredients": [3, 4, 5, 6, {"index": 0, "qty": "2/3", "unit": "C"}, 7]
+        },
+        "Cover the dough and let rise until doubled, about 2 hours."
+      ]
+    },
+    {
+      "group": "filling",
+      "directions": [
+        {
+          "step": "Punch down the dough and roll out into a long rectangle, long enough to yield twelve 1.5\" slices. Spread with the melted butter, then sprinkle evenly with the brown sugar, cinnamon, and roasted chopped pecans to cover.",
+          "ingredients": [2, 0, 1, 3]
+        },
+        "Roll the dough up lengthwise into a tight log and cut into twelve 1.5\" slices.",
+        "Grease a 9x13 baking dish and arrange the 12 slices in it. Let rise again until doubled in size.",
+        "Bake at 350°F for 20-25 minutes, or until golden brown. Let cool completely before icing."
+      ]
+    },
+    {
+      "group": "icing",
+      "directions": [
+        {
+          "step": "Once the rolls are cool, make the icing. In a medium saucepan melt the butter over high heat until it just starts to boil. Add the brown sugar.",
+          "ingredients": [0, 1]
+        },
+        "Bring to a boil, then lower heat to medium and continue to boil for exactly 2 minutes, stirring constantly. Do not boil longer than 2 minutes.",
+        {
+          "step": "Add the milk and maple extract and return to a boil, stirring constantly. As soon as it begins to boil, remove from heat and cool to lukewarm.",
+          "ingredients": [2, 4]
+        },
+        {
+          "step": "Gradually add the sifted confectioners' sugar, stirring with a wooden spoon until thick and spreadable. Spread over the cooled rolls.",
+          "ingredients": [3]
+        },
+        {
+          "step": "Sprinkle roasted chopped pecans over the icing.",
+          "ingredients": [5]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "DRAFT: pecan amounts are TBD — both in the filling and on top of the icing.",
+    "Makes 12 rolls baked in a 9x13 dish. Roll the dough long enough to cut twelve 1.5\" slices.",
+    "Original recipe makes fewer rolls in an 8\" cake pan; this is the scaled-up 12-roll version."
+  ],
+  "created_at": "2026-06-25"
+}

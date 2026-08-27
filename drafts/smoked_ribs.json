@@ -1,6 +1,6 @@
 {
   "title": "smoked ribs",
-  "description": "oneliner",
+  "description": "",
   "category": "mains",
   "yields": "",
   "tags": "barbecue, pork",
@@ -12,19 +12,72 @@
     {
       "qty": 1,
       "item": "baby back ribs"
+    },
+    {
+      "qty": 65,
+      "unit": "g",
+      "item": "coarse sea salt"
+    },
+    {
+      "qty": 6,
+      "unit": "T",
+      "item": "garlic powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "chipotle powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "smoked paprika"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "chili powder"
+    },
+    {
+      "qty": "1/2",
+      "unit": "T",
+      "item": "cumin"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "cinnamon powder"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "black pepper"
+    },
+    {
+      "qty": 113,
+      "unit": "g",
+      "item": "butter"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "honey"
     }
   ],
   "directions": [
     {
-      "step": "Prepare the ribs three hours prior to smoking. Pat the ribs dry with a paper towel and remove the silver skin from the bottom side of the ribs...",
-      "ingredients": [
-        0
-      ]
+      "step": "Prepare the ribs three hours prior to smoking. Pat the ribs dry with a paper towel and remove the silver skin from the bottom side of the ribs. Place the dry ribs on a wire rack over a baking sheet. Cover all over with coarse salt. Place the ribs in the fridge until ready to smoke.",
+      "ingredients": [0, 1]
     },
-    "or if no new ingredients are introduced it can just be a string"
+    {
+      "step": "The next day, preheat smoker to 225°F. Whisk together all of the spices in a bowl to make the rub. Take pork out of the fridge and season generously with rub. It's best to pat or press the rub into the meat before gently rubbing around for complete coverage. Place the pork on the smoker meat side up and add apple or cherry wood chips.",
+      "ingredients": [2, 3, 4, 5, 6, 7, 8]
+    },
+    {
+      "step": "Add wood chips as needed, every 30-45 minutes for the first 3 hours. After 3 hours remove the ribs from the smoker and place on a sheet of foil. Drizzle the honey over the ribs and add then cut the butter into cubes and add to the ribs.",
+      "ingredients": [9, 10]
+    }
   ],
-  "notes": [
-    "Helpful tips"
-  ],
+  "notes": [],
   "created_at": "2026-03-19"
 }

@@ -1,0 +1,95 @@
+{
+  "title": "rachel's banana bread",
+  "description": "",
+  "category": "desserts",
+  "tags": "banana, bread, walnuts",
+  "prep_time": "",
+  "cook_time": "50-60 minutes",
+  "inactive_time": "",
+  "total_time": "",
+  "yields": "1 loaf",
+  "equipment": [
+    "loaf pan",
+    "stand mixer"
+  ],
+  "ingredients": [
+    {
+      "qty": "1 1/2",
+      "unit": "C",
+      "item": "all purpose flour"
+    },
+    {
+      "qty": "1/2",
+      "unit": "t",
+      "item": "salt"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "baking soda"
+    },
+    {
+      "qty": 1,
+      "unit": "C",
+      "item": "white sugar"
+    },
+    {
+      "qty": "1/2",
+      "unit": "C",
+      "item": "unsalted butter",
+      "prep": "softened"
+    },
+    {
+      "qty": 2,
+      "item": "medium bananas",
+      "prep": "mashed (~1 cup)"
+    },
+    {
+      "qty": 2,
+      "item": "eggs"
+    },
+    {
+      "qty": "1/2",
+      "unit": "C",
+      "item": "plain yogurt",
+      "prep": "full fat"
+    },
+    {
+      "qty": 1,
+      "unit": "t",
+      "item": "vanilla extract"
+    },
+    {
+      "qty": "1/2",
+      "unit": "C",
+      "item": "walnuts",
+      "prep": "chopped"
+    }
+  ],
+  "amount_variations": [
+    "2x"
+  ],
+  "directions": [
+    "Preheat the oven to 350°F and grease the bottom of a loaf pan.",
+    {
+      "step": "In a medium bowl, whisk together the flour, salt, and baking soda.",
+      "ingredients": [0, 1, 2]
+    },
+    {
+      "step": "In the bowl of a stand mixer fitted with a paddle attachment, cream the sugar and butter at medium speed for two minutes.",
+      "ingredients": [3, 4]
+    },
+    {
+      "step": "Beat in the bananas, eggs, yogurt, and vanilla for one minute at medium speed.",
+      "ingredients": [5, 6, 7, 8]
+    },
+    "Add the flour mixture to the stand mixer bowl and mix until just combined.",
+    {
+      "step": "Fold the walnuts into the batter with a spatula.",
+      "ingredients": [9]
+    },
+    "Transfer the batter to your prepared loaf pan and bake for 50-60 minutes. A toothpick inserted into the middle of the loaf should pull out with some crumbs, not cleanly. Allow to cool to room temperature."
+  ],
+  "notes": [],
+  "created_at": "2026-08-11"
+}
