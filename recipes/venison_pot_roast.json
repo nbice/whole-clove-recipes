@@ -1,0 +1,112 @@
+{
+  "title": "venison pot roast",
+  "description": "",
+  "category": "mains",
+  "tags": "venison, game, pot roast",
+  "prep_time": "",
+  "cook_time": "1 hour",
+  "inactive_time": "12 hours",
+  "total_time": "13 hours",
+  "yields": "",
+  "equipment": [
+    "cast iron dutch oven",
+    "wire rack",
+    "sheet tray",
+    "meat probe"
+  ],
+  "ingredients": [
+    {
+      "qty": 1,
+      "item": "venison sirloin tip roast"
+    },
+    {
+      "qty": "3-5",
+      "unit": "T",
+      "item": "coarse kosher salt"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "avocado oil"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "coarse black pepper"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "smoked paprika"
+    },
+    {
+      "qty": 2,
+      "unit": "T",
+      "item": "garlic powder"
+    },
+    {
+      "qty": 3,
+      "item": "garlic cloves",
+      "prep": "chopped"
+    },
+    {
+      "qty": 1,
+      "item": "small celery stalk",
+      "prep": "finely diced"
+    },
+    {
+      "qty": 1,
+      "unit": "T",
+      "item": "dried oregano"
+    },
+    {
+      "qty": 60,
+      "unit": "ml",
+      "item": "white cooking wine"
+    },
+    {
+      "qty": 3,
+      "item": "small white onions",
+      "prep": "quartered"
+    },
+    {
+      "qty": 6,
+      "item": "red potatoes",
+      "prep": "quartered"
+    },
+    {
+      "qty": 5,
+      "item": "large carrots",
+      "prep": "halved"
+    },
+    {
+      "qty": 500,
+      "unit": "ml",
+      "item": "beef stock"
+    },
+    {
+      "qty": 500,
+      "unit": "ml",
+      "item": "water"
+    }
+  ],
+  "amount_variations": ["0.5x", "2x"],
+  "directions": [
+    {
+      "step": "Generously cover the entire roast with the kosher salt and place it on a wire rack over a small sheet tray. Put the sheet tray in the fridge and let the roast sit for 12 hours.",
+      "ingredients": [0, 1]
+    },
+    {
+      "step": "Preheat a cast iron dutch oven over medium-high heat. Remove the salted roast from the fridge and rub it with a little of the oil, then apply the black pepper, smoked paprika, and garlic powder. Add the rest of the oil to the dutch oven and sear the roast for 1-2 minutes per side until a dark brown crust has formed.",
+      "ingredients": [2, 3, 4, 5]
+    },
+    {
+      "step": "Remove the roast from the dutch oven and lower the heat to medium-low. Add the garlic and celery, then sauté for 1-2 minutes until the garlic is fragrant and starts to brown, stirring frequently. Add the oregano and stir, then deglaze the pot with the cooking wine. Add the onions, potatoes, carrots, beef stock, and water. Stir everything together and raise the heat to medium to bring the broth to a low boil.",
+      "ingredients": [6, 7, 8, 9, 10, 11, 12, 13, 14]
+    },
+    "Place the roast in the dutch oven with the vegetables and insert a meat probe set to 130°F into the center of the roast. Cover the dutch oven with the lid and reduce the heat to medium-low. Pull the roast from the heat as soon as it hits 130°F, even if the vegetables aren't done yet. After 30 minutes, preheat the oven to 350°F in case the roast needs it and check the vegetables. Keep checking every 10-15 minutes until the carrots and potatoes are fork-tender, then remove the dutch oven from the heat. If the roast still hasn't reached 130°F, transfer it to the oven to finish.",
+    "Let the roast rest for at least 10 minutes. This will bring it to medium-rare. When ready to serve, thinly slice the roast and cut it into bite-size pieces. Divide the meat among bowls and ladle in as much broth and vegetables as you like."
+  ],
+  "notes": [],
+  "created_at": "2026-09-15"
+}

@@ -1,0 +1,48 @@
+{
+  "title": "quiche",
+  "description": "",
+  "category": "mains",
+  "tags": "quiche, eggs, sourdough discard",
+  "prep_time": "",
+  "cook_time": "",
+  "inactive_time": "",
+  "total_time": "",
+  "yields": "",
+  "equipment": [],
+  "ingredients": [
+    {
+      "qty": 120,
+      "unit": "g",
+      "item": "all purpose flour"
+    },
+    {
+      "qty": 40,
+      "unit": "g",
+      "item": "whole wheat flour"
+    },
+    {
+      "qty": 113,
+      "unit": "g",
+      "item": "unsalted butter"
+    },
+    {
+      "qty": 100,
+      "unit": "g",
+      "item": "sourdough discard"
+    },
+    {
+      "item": "ice water"
+    },
+    {
+      "qty": 6,
+      "item": "eggs"
+    }
+  ],
+  "amount_variations": [
+    "0.5x",
+    "2x"
+  ],
+  "directions": [],
+  "notes": [],
+  "created_at": "2026-09-15"
+}
